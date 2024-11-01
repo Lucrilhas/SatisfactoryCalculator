@@ -3,6 +3,7 @@ import requests
 from dotenv import load_dotenv
 from bs4 import BeautifulSoup
 from utils import logger
+import json
 
 def scrape_wiki_all_items(url: str) -> list[str]:
     try:
@@ -84,24 +85,80 @@ def scrape_wiki_item_crafing(url:str) -> dict:
     table = h3_tag.find_next_sibling('table')
     if table is None:
         return None
-
-    data = []
-    for row in table.find_all('tr'):
-        row_data = []
-        for cell in row.find_all(['td', 'th']):
-            row_data.append(cell.get_text(strip=True))
-        if row_data:
-            data.append(row_data)
-
-    return data
-
-def data_to_dict(data:list[list[str]]) -> dict:
-    cols_names = data[0]
-    print(cols_names)
-    data = data[1:]
-    print("asd")
-    print(data)
     
+    tbody = table.find('tbody')
+    if tbody is None:
+        return None
+
+    trs = tbody.find_all('tr')
+    if trs is None:
+        return None
+    
+    trs.pop(0)
+    crafts = {}
+    for i, tr in enumerate(trs):
+        tds = tr.find_all('td')
+        recipe = tds[0].text.strip()
+        ings = tds[1]
+        produced_in = tds[2].find('a').text
+        prods = tds[3]
+
+        # logger.info(f"recipe: {recipe}")
+        # logger.info(f"produced_in: {produced_in}")
+        crafts[recipe] = {
+            'ingredients': {
+                0: {
+                    'item_name': None,
+                    'item_per_min': None,
+                },
+                1: {
+                    'item_name': None,
+                    'item_per_min': None,
+                },
+                2: {
+                    'item_name': None,
+                    'item_per_min': None,
+                },
+                3: {
+                    'item_name': None,
+                    'item_per_min': None,
+                }
+            },
+            'produced_in': produced_in,
+            'products': {
+                0: {
+                    'item_name': None,
+                    'item_per_min': None,
+                },
+                1: {
+                    'item_name': None,
+                    'item_per_min': None,
+                }
+            }
+        }
+        
+
+        for i, ingredient in enumerate(ings.contents[0].children):
+            item_per_craft = ingredient.contents[0].text.replace("×", "").strip()
+            item_name = ingredient.contents[2].text.strip()
+            item_per_min = ingredient.contents[3].text.replace("/", "").replace("min", "").strip()
+
+            # print(item_per_craft, item_name, item_per_min, "\n")
+            crafts[recipe]['ingredients'][i]['item_name'] = item_name
+            crafts[recipe]['ingredients'][i]['item_per_min'] = item_per_min
+
+        for i, product in enumerate(prods.contents[0].children):
+            item_per_craft = product.contents[0].text.replace("×", "").strip()
+            item_name = product.contents[2].text.strip()
+            item_per_min = product.contents[3].text.replace("/", "").replace("min", "").strip()
+
+            # print(item_per_craft, item_name, item_per_min, "\n")
+            crafts[recipe]['products'][i]['item_name'] = item_name
+            crafts[recipe]['products'][i]['item_per_min'] = item_per_min
+
+    return crafts
+
+
 
 if __name__ == "__main__":
     load_dotenv()
@@ -113,7 +170,9 @@ if __name__ == "__main__":
         # for i in items_links:
         #     print(i)
         recipe_data = scrape_wiki_item_crafing(os.getenv("MAIN_PAGE") + items_links[6])
-        data_to_dict(recipe_data)
+        
+        # data_to_dict(recipe_data)
 
-        recipe_data = scrape_wiki_item_crafing(os.getenv("MAIN_PAGE") + items_links[1])
-        data_to_dict(recipe_data)
+        # recipe_data = scrape_wiki_item_crafing(os.getenv("MAIN_PAGE") + items_links[1])
+        print(json.dumps(recipe_data, sort_keys=False, indent=4))
+        # data_to_dict(recipe_data)
