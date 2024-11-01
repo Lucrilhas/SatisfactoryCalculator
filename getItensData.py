@@ -2,7 +2,7 @@ import os
 import requests
 from dotenv import load_dotenv
 from bs4 import BeautifulSoup
-from utils import logger
+from utils import *
 import json
 
 
@@ -39,7 +39,7 @@ def extract_items(items_container):
 
 
 def scrape_wiki_item_crafing(url: str) -> dict:
-    logger.info(url)
+    # logger.info(url)
     response = requests.get(url)
     response.raise_for_status()
     # logger.debug(response)
@@ -77,15 +77,22 @@ def scrape_wiki_item_crafing(url: str) -> dict:
 
 if __name__ == "__main__":
     load_dotenv()
-    all_itens_url = os.getenv("MAIN_PAGE") + os.getenv("ALL_ITENS_PAGE")
+    main_page_link = os.getenv("MAIN_PAGE")
+    all_itens_url = main_page_link + os.getenv("ALL_ITENS_PAGE")
     logger.info(all_itens_url)
     items_links = scrape_wiki_all_items(all_itens_url)
 
     if items_links:
-        # for i in items_links:
-        #     print(i)
-        # recipe_data = scrape_wiki_item_crafing(os.getenv("MAIN_PAGE") + items_links[6])
+        all_crafts = {}
+        for n, item_link in enumerate(items_links):
+            item_name = item_link[6:]
+            if item_name in primary_itens:
+                logger.warning(item_name)
+            elif item_name in blacklist:
+                logger.error(item_name)
+            else:
+                logger.debug(item_name)
+                all_crafts[item_name] = scrape_wiki_item_crafing(main_page_link + item_link)
 
-        # recipe_data = scrape_wiki_item_crafing(os.getenv("MAIN_PAGE") + items_links[1])
-        recipe_data = scrape_wiki_item_crafing(os.getenv("MAIN_PAGE") + items_links[2])
-        print(json.dumps(recipe_data, sort_keys=False, indent=4))
+        with open('recipes.json', 'w') as f:
+            json.dump(all_crafts, f, indent=4)
