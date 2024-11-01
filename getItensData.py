@@ -8,7 +8,7 @@ def scrape_wiki_all_items(url: str) -> list[str]:
     try:
         response = requests.get(url)
         response.raise_for_status()
-        logger.debug(response)
+        # logger.debug(response)
         soup = BeautifulSoup(response.content, 'html.parser')
         
         return [i["href"] for i in soup.select("#mw-pages ul li a")]
@@ -24,7 +24,7 @@ def scrape_wiki_item_tables(url:str) -> dict:
     logger.info(url)
     response = requests.get(url)
     response.raise_for_status()
-    logger.debug(response)
+    # logger.debug(response)
     soup = BeautifulSoup(response.content, 'html.parser')
     recipe_tables = soup.find_all('table', class_='wikitable sortable recipetable')
 
@@ -70,6 +70,38 @@ def scrape_wiki_item_tables(url:str) -> dict:
 
     return recipe_data
 
+def scrape_wiki_item_crafing(url:str) -> dict:
+    logger.info(url)
+    response = requests.get(url)
+    response.raise_for_status()
+    # logger.debug(response)
+    soup = BeautifulSoup(response.content, 'html.parser')
+
+    h3_tag = soup.find('h3', string="Crafting")
+    if h3_tag is None:
+        return None
+
+    table = h3_tag.find_next_sibling('table')
+    if table is None:
+        return None
+
+    data = []
+    for row in table.find_all('tr'):
+        row_data = []
+        for cell in row.find_all(['td', 'th']):
+            row_data.append(cell.get_text(strip=True))
+        if row_data:
+            data.append(row_data)
+
+    return data
+
+def data_to_dict(data:list[list[str]]) -> dict:
+    cols_names = data[0]
+    print(cols_names)
+    data = data[1:]
+    print("asd")
+    print(data)
+    
 
 if __name__ == "__main__":
     load_dotenv()
@@ -80,6 +112,8 @@ if __name__ == "__main__":
     if items_links:
         # for i in items_links:
         #     print(i)
-        recipe_data = scrape_wiki_item_tables(os.getenv("MAIN_PAGE") + items_links[6])
-        for i in recipe_data:
-            logger.debug(i)
+        recipe_data = scrape_wiki_item_crafing(os.getenv("MAIN_PAGE") + items_links[6])
+        data_to_dict(recipe_data)
+
+        recipe_data = scrape_wiki_item_crafing(os.getenv("MAIN_PAGE") + items_links[1])
+        data_to_dict(recipe_data)
