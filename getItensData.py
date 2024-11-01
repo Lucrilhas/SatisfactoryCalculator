@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from bs4 import BeautifulSoup
 from utils import logger
 
-def scrape_all_items_wiki(url: str) -> list[str]:
+def scrape_wiki_all_items(url: str) -> list[str]:
     try:
         response = requests.get(url)
         response.raise_for_status()
@@ -20,43 +20,66 @@ def scrape_all_items_wiki(url: str) -> list[str]:
         logger.error(f"An error occurred during parsing: {e}")
         return None
 
-def scrape_item_wiki(url:str) -> dict:
+def scrape_wiki_item_tables(url:str) -> dict:
     logger.info(url)
-    soup = BeautifulSoup(url, 'html.parser')
-    tables = soup.find_all('table', {'class': 'wikitable sortable recipetable'})
+    response = requests.get(url)
+    response.raise_for_status()
+    logger.debug(response)
+    soup = BeautifulSoup(response.content, 'html.parser')
+    recipe_tables = soup.find_all('table', class_='wikitable sortable recipetable')
 
-    if not tables:
-        return None
+    recipe_data = []
 
-    data_list = []
-    for table in tables:
-        rows = table.find_all('tr')
-        for row in rows[1:]:
-            cols = row.find_all('td')
-            if len(cols) >= 5:
-                try:
-                    item_data = {
-                        'input': cols[1].text.strip(), #Ingredients
-                        'output': cols[3].text.strip(), #Products
-                        'machine': cols[2].text.strip().split('\n')[0], #Machine name (handles possible line breaks)
-                        'time': cols[2].text.strip().split('\n')[-1].split(' ')[0], #Time (extract number)
-                        'energy': 'N/A'
-                    }
-                    data_list.append(item_data)
-                except (IndexError, ValueError) as e:
-                    print(f"Error parsing row: {e}")
+    for table in recipe_tables:
+        for row in table.find_all('tr')[1:]:  # Skip header row
+            cells = row.find_all('td')
+            if len(cells) >= 5: #Ensure all expected cells are present
 
-    print(data_list)
-    return data_list
+                name = cells[0].get_text(strip=True)
+
+                ingredients = []
+                for item in cells[1].find_all('div', class_='recipe-item'):
+                    amount = item.find('span', class_='item-amount').get_text(strip=True).replace('×','')
+                    ingredient_name = item.find('span', class_='item-name').get_text(strip=True)
+                    try:
+                        ingredients.append((ingredient_name, int(amount)))
+                    except ValueError: #Handle cases like "X ml" where amount is not a simple integer
+                        ingredients.append((ingredient_name, amount))
+
+                produced_in = cells[2].get_text(strip=True).replace('\n',', ')
+
+                products = []
+                for item in cells[3].find_all('div', class_='recipe-item'):
+                   amount = item.find('span', class_='item-amount').get_text(strip=True).replace('×','')
+                   product_name = item.find('span', class_='item-name').get_text(strip=True)
+                   try:
+                      products.append((product_name, int(amount)))
+                   except ValueError:
+                       products.append((product_name,amount))
+                
+                unlocked_by = cells[4].get_text(strip=True).replace('\n', ', ')
+
+
+                recipe_data.append({
+                    "name": name,
+                    "ingredients": ingredients,
+                    "produced_in": produced_in,
+                    "products": products,
+                    "unlocked_by": unlocked_by
+                })
+
+    return recipe_data
 
 
 if __name__ == "__main__":
     load_dotenv()
-    all_itens_url = os.getenv("ALL_ITENS_PAGE")
+    all_itens_url = os.getenv("MAIN_PAGE") + os.getenv("ALL_ITENS_PAGE")
     logger.info(all_itens_url)
-    items_links = scrape_all_items_wiki(all_itens_url)
+    items_links = scrape_wiki_all_items(all_itens_url)
 
     if items_links:
         # for i in items_links:
         #     print(i)
-        scrape_item_wiki(items_links[2])
+        recipe_data = scrape_wiki_item_tables(os.getenv("MAIN_PAGE") + items_links[6])
+        for i in recipe_data:
+            logger.debug(i)
