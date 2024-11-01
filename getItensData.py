@@ -105,7 +105,13 @@ def scrape_wiki_item_crafing(url:str) -> dict:
 
         # logger.info(f"recipe: {recipe}")
         # logger.info(f"produced_in: {produced_in}")
+        alt = False
+        if "Alternate" in recipe:
+            alt = True
+            recipe = recipe[:-9]
+            
         crafts[recipe] = {
+            'alternate': alt,
             'ingredients': {
                 0: {
                     'item_name': None,
@@ -169,10 +175,9 @@ if __name__ == "__main__":
     if items_links:
         # for i in items_links:
         #     print(i)
-        recipe_data = scrape_wiki_item_crafing(os.getenv("MAIN_PAGE") + items_links[6])
+        # recipe_data = scrape_wiki_item_crafing(os.getenv("MAIN_PAGE") + items_links[6])
         
-        # data_to_dict(recipe_data)
 
         # recipe_data = scrape_wiki_item_crafing(os.getenv("MAIN_PAGE") + items_links[1])
+        recipe_data = scrape_wiki_item_crafing(os.getenv("MAIN_PAGE") + items_links[2])
         print(json.dumps(recipe_data, sort_keys=False, indent=4))
-        # data_to_dict(recipe_data)
