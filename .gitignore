@@ -2,3 +2,4 @@
 *.pyc
 .env
 teste.html
+/data/imgs
