@@ -1,7 +1,7 @@
 import json
 from utils import logger
 
-def read_recipes(filepath: str = r"data/recipes.json") -> dict:
+def read_json(filepath: str) -> dict:
     try:
         with open(filepath, "r") as f:
             data = json.load(f)
