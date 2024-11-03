@@ -59,9 +59,13 @@ def scrape_wiki_item_crafing(url: str) -> dict:
         alt = "Alternate" in recipe
         if alt:
             recipe = recipe[:-9]
+        asBy = "As byproduct" in recipe
+        if asBy:
+            recipe = recipe[:-13]
 
         crafts[recipe] = {
             "alternate": alt,
+            "byproduct": asBy,
             "ingredients": extract_items(ings),
             "produced_in": produced_in,
             "products": extract_items(prods),
@@ -105,17 +109,23 @@ if __name__ == "__main__":
 
     if items_links:
         all_crafts = {}
-        for n, item_link in enumerate(items_links):
+        for indc, item_link in enumerate(items_links):
             item_name = item_link[6:]
             if item_name in primary_itens:
                 logger.warning(item_name)
                 title = scrape_title_img_item(main_page_link + item_link, main_page_link)
+                img_path = r"data/imgs/" + title + r".png"
+                color = get_main_color(img_path)
+                all_crafts[title] = {'primary':True, 'hex_color': color}
+                
             elif item_name in blacklist:
                 logger.error(item_name)
             else:
                 logger.debug(item_name)
                 title = scrape_title_img_item(main_page_link + item_link, main_page_link)
-                all_crafts[title] = {'recipes': scrape_wiki_item_crafing(main_page_link + item_link)}
+                img_path = r"data/imgs/" + title + r".png"
+                color = get_main_color(img_path)
+                all_crafts[title] = {'recipes': scrape_wiki_item_crafing(main_page_link + item_link), 'primary':False, 'hex_color': color}
 
         with open(r'data/recipes.json', 'w') as f:
             json.dump(all_crafts, f, indent=4)
