@@ -79,7 +79,7 @@ def get_links_data():
     
     load_dotenv()
     main_page_link = os.getenv("MAIN_PAGE")
-    itens = read_json(r"Scrap\itens_links.json")
+    itens = read_json(r"jsons\itens_links.json")
 
     primary_items = (
         "/wiki/Bacon_Agaric",
@@ -116,5 +116,5 @@ def get_links_data():
             logger.debug(key)
             all_crafts[key] = {'recipes': scrape_wiki_item_crafing(main_page_link + link), 'primary':False, 'hex_color': color}
             
-    with open(r'Scrap/recipes.json', 'w') as f:
+    with open(r'jsons/recipes.json', 'w') as f:
         json.dump(all_crafts, f, indent=4)

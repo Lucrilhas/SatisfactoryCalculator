@@ -77,5 +77,5 @@ def save_all_links():
 
     links = {l.replace('_', ' ').replace('/wiki/', ''): {'link': l} for l in links}
 
-    with open(r'Scrap/itens_links.json', 'w') as f:
+    with open(r'jsons/itens_links.json', 'w') as f:
         json.dump(links, f, indent=4)
