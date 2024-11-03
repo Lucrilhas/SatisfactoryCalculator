@@ -3,6 +3,7 @@
         "recipes": {
             "Adaptive Control Unit": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Automated Wiring",
@@ -29,12 +30,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#181818"
     },
     "AI Expansion Server": {
         "recipes": {
             "AI Expansion Server": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Magnetic Field Generator",
@@ -65,12 +69,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#e1d5d9"
     },
     "AI Limiter": {
         "recipes": {
             "AI Limiter": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Copper Sheet",
@@ -91,6 +98,7 @@
             },
             "Plastic AI Limiter": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Quickwire",
@@ -109,12 +117,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#1b1c1e"
     },
     "Alclad Aluminum Sheet": {
         "recipes": {
             "Alclad Aluminum Sheet": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Aluminum Ingot",
@@ -133,12 +144,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#adb5bd"
     },
     "Alien DNA Capsule": {
         "recipes": {
             "Alien DNA Capsule": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Alien Protein",
@@ -153,12 +167,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#9c9ca5"
     },
     "Alien Power Matrix": {
         "recipes": {
             "Alien Power Matrix": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "SAM Fluctuator",
@@ -189,12 +206,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#ffeefe"
     },
     "Alien Protein": {
         "recipes": {
             "Hatcher Protein": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Hatcher Remains",
@@ -211,6 +231,7 @@
             },
             "Hog Protein": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Hog Remains",
@@ -227,6 +248,7 @@
             },
             "Spitter Protein": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Spitter Remains",
@@ -243,6 +265,7 @@
             },
             "Stinger Protein": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Stinger Remains",
@@ -257,12 +280,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#c8cbcb"
     },
     "Alien Remains": {
         "recipes": {
             "Hatcher Protein": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Hatcher Remains",
@@ -279,6 +305,7 @@
             },
             "Hog Protein": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Hog Remains",
@@ -295,6 +322,7 @@
             },
             "Spitter Protein": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Spitter Remains",
@@ -311,6 +339,7 @@
             },
             "Stinger Protein": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Stinger Remains",
@@ -325,12 +354,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#9c849c"
     },
     "Aluminum Casing": {
         "recipes": {
             "Aluminum Casing": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Aluminum Ingot",
@@ -347,6 +379,7 @@
             },
             "Alclad Casing": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Aluminum Ingot",
@@ -365,12 +398,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#aaaaad"
     },
     "Aluminum Ingot": {
         "recipes": {
             "Aluminum Ingot": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Aluminum Scrap",
@@ -391,6 +427,7 @@
             },
             "Pure Aluminum Ingot": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Aluminum Scrap",
@@ -405,12 +442,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#adadad"
     },
     "Aluminum Scrap": {
         "recipes": {
             "Aluminum Scrap": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Alumina Solution",
@@ -435,6 +475,7 @@
             },
             "Electrode Aluminum Scrap": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Alumina Solution",
@@ -459,6 +500,7 @@
             },
             "Instant Scrap": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Bauxite",
@@ -489,12 +531,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#000000"
     },
     "Assembly Director System": {
         "recipes": {
             "Assembly Director System": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Adaptive Control Unit",
@@ -513,12 +558,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#292929"
     },
     "Automated Wiring": {
         "recipes": {
             "Automated Wiring": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Stator",
@@ -539,6 +587,7 @@
             },
             "Automated Speed Wiring": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Stator",
@@ -561,64 +610,19 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#000000"
     },
     "Bacon Agaric": {
-        "recipes": {
-            "Nutritional Inhaler": {
-                "alternate": false,
-                "ingredients": [
-                    {
-                        "item_name": "Bacon Agaric",
-                        "item_per_min": "3"
-                    },
-                    {
-                        "item_name": "Paleberry",
-                        "item_per_min": "6"
-                    },
-                    {
-                        "item_name": "Beryl Nut",
-                        "item_per_min": "15"
-                    }
-                ],
-                "produced_in": "Equipment Workshop",
-                "products": [
-                    {
-                        "item_name": "Medicinal Inhaler",
-                        "item_per_min": "3"
-                    }
-                ]
-            },
-            "Therapeutic Inhaler": {
-                "alternate": false,
-                "ingredients": [
-                    {
-                        "item_name": "Mycelia",
-                        "item_per_min": "45"
-                    },
-                    {
-                        "item_name": "Alien Protein",
-                        "item_per_min": "3"
-                    },
-                    {
-                        "item_name": "Bacon Agaric",
-                        "item_per_min": "3"
-                    }
-                ],
-                "produced_in": "Equipment Workshop",
-                "products": [
-                    {
-                        "item_name": "Medicinal Inhaler",
-                        "item_per_min": "3"
-                    }
-                ]
-            }
-        }
+        "primary": true,
+        "hex_color": "#ded6bd"
     },
     "Ballistic Warp Drive": {
         "recipes": {
             "Ballistic Warp Drive": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Thermal Propulsion Rocket",
@@ -645,12 +649,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#000002"
     },
     "Battery": {
         "recipes": {
             "Battery": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Sulfuric Acid",
@@ -679,6 +686,7 @@
             },
             "Classic Battery": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Sulfur",
@@ -705,60 +713,23 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#adadbd"
+    },
+    "Bauxite": {
+        "primary": true,
+        "hex_color": "#c68c73"
     },
     "Beryl Nut": {
-        "recipes": {
-            "Nutritional Inhaler": {
-                "alternate": false,
-                "ingredients": [
-                    {
-                        "item_name": "Bacon Agaric",
-                        "item_per_min": "3"
-                    },
-                    {
-                        "item_name": "Paleberry",
-                        "item_per_min": "6"
-                    },
-                    {
-                        "item_name": "Beryl Nut",
-                        "item_per_min": "15"
-                    }
-                ],
-                "produced_in": "Equipment Workshop",
-                "products": [
-                    {
-                        "item_name": "Medicinal Inhaler",
-                        "item_per_min": "3"
-                    }
-                ]
-            },
-            "Protein Inhaler": {
-                "alternate": false,
-                "ingredients": [
-                    {
-                        "item_name": "Alien Protein",
-                        "item_per_min": "3"
-                    },
-                    {
-                        "item_name": "Beryl Nut",
-                        "item_per_min": "30"
-                    }
-                ],
-                "produced_in": "Equipment Workshop",
-                "products": [
-                    {
-                        "item_name": "Medicinal Inhaler",
-                        "item_per_min": "3"
-                    }
-                ]
-            }
-        }
+        "primary": true,
+        "hex_color": "#d6c69c"
     },
     "Biochemical Sculptor": {
         "recipes": {
             "Biochemical Sculptor": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Assembly Director System",
@@ -781,12 +752,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#71747b"
     },
     "Biomass": {
         "recipes": {
             "Biomass (Alien Protein)": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Alien Protein",
@@ -803,6 +777,7 @@
             },
             "Biomass (Leaves)": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Leaves",
@@ -819,6 +794,7 @@
             },
             "Biomass (Mycelia)": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Mycelia",
@@ -835,6 +811,7 @@
             },
             "Biomass (Wood)": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Wood",
@@ -849,12 +826,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#312918"
     },
     "Black Powder": {
         "recipes": {
             "Black Powder": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Coal",
@@ -875,6 +855,7 @@
             },
             "Fine Black Powder": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Sulfur",
@@ -893,12 +874,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#ad0010"
     },
     "Cable": {
         "recipes": {
             "Cable": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Wire",
@@ -915,6 +899,7 @@
             },
             "Coated Cable": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Wire",
@@ -935,6 +920,7 @@
             },
             "Insulated Cable": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Wire",
@@ -955,6 +941,7 @@
             },
             "Quickwire Cable": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Quickwire",
@@ -973,12 +960,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#181818"
     },
     "Caterium Ingot": {
         "recipes": {
             "Caterium Ingot": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Caterium Ore",
@@ -995,6 +985,7 @@
             },
             "Leached Caterium Ingot": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Caterium Ore",
@@ -1015,6 +1006,7 @@
             },
             "Pure Caterium Ingot": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Caterium Ore",
@@ -1035,6 +1027,7 @@
             },
             "Tempered Caterium Ingot": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Caterium Ore",
@@ -1053,12 +1046,19 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#b5ad94"
+    },
+    "Caterium Ore": {
+        "primary": true,
+        "hex_color": "#9c9cad"
     },
     "Chainsaw": {
         "recipes": {
             "Chainsaw": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Reinforced Iron Plate",
@@ -1085,12 +1085,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#293142"
     },
     "Circuit Board": {
         "recipes": {
             "Circuit Board": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Copper Sheet",
@@ -1111,6 +1114,7 @@
             },
             "Caterium Circuit Board": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Plastic",
@@ -1131,6 +1135,7 @@
             },
             "Electrode Circuit Board": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Rubber",
@@ -1151,6 +1156,7 @@
             },
             "Silicon Circuit Board": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Copper Sheet",
@@ -1169,12 +1175,19 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#f7b563"
+    },
+    "Coal": {
+        "primary": true,
+        "hex_color": "#000000"
     },
     "Compacted Coal": {
         "recipes": {
-            "Ionized Fuel As byproduct": {
+            "Ionized Fuel": {
                 "alternate": false,
+                "byproduct": true,
                 "ingredients": [
                     {
                         "item_name": "Rocket Fuel",
@@ -1197,8 +1210,9 @@
                     }
                 ]
             },
-            "Rocket Fuel As byproduct": {
+            "Rocket Fuel": {
                 "alternate": false,
+                "byproduct": true,
                 "ingredients": [
                     {
                         "item_name": "Turbofuel",
@@ -1223,6 +1237,7 @@
             },
             "Compacted Coal": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Coal",
@@ -1243,6 +1258,7 @@
             },
             "Dark-Ion FuelAlternate As ": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Packaged Rocket Fuel",
@@ -1267,6 +1283,7 @@
             },
             "Nitro Rocket FuelAlternate As ": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Fuel",
@@ -1297,12 +1314,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#000000"
     },
     "Computer": {
         "recipes": {
             "Computer": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Circuit Board",
@@ -1327,6 +1347,7 @@
             },
             "Caterium Computer": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Circuit Board",
@@ -1351,6 +1372,7 @@
             },
             "Crystal Computer": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Circuit Board",
@@ -1369,12 +1391,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#d6ad73"
     },
     "Concrete": {
         "recipes": {
             "Concrete": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Limestone",
@@ -1391,6 +1416,7 @@
             },
             "Fine Concrete": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Silica",
@@ -1411,6 +1437,7 @@
             },
             "Rubber Concrete": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Limestone",
@@ -1431,6 +1458,7 @@
             },
             "Wet Concrete": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Limestone",
@@ -1449,12 +1477,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#a5948c"
     },
     "Cooling System": {
         "recipes": {
             "Cooling System": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Heat Sink",
@@ -1483,6 +1514,7 @@
             },
             "Cooling Device": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Heat Sink",
@@ -1505,12 +1537,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#de9c63"
     },
     "Copper Ingot": {
         "recipes": {
             "Copper Ingot": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Copper Ore",
@@ -1527,6 +1562,7 @@
             },
             "Copper Alloy Ingot": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Copper Ore",
@@ -1547,6 +1583,7 @@
             },
             "Leached Copper Ingot": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Copper Ore",
@@ -1567,6 +1604,7 @@
             },
             "Pure Copper Ingot": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Copper Ore",
@@ -1587,6 +1625,7 @@
             },
             "Tempered Copper Ingot": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Copper Ore",
@@ -1605,12 +1644,19 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#8c6763"
+    },
+    "Copper Ore": {
+        "primary": true,
+        "hex_color": "#7b8494"
     },
     "Copper Powder": {
         "recipes": {
             "Copper Powder": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Copper Ingot",
@@ -1625,12 +1671,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#6b4a4a"
     },
     "Copper Sheet": {
         "recipes": {
             "Copper Sheet": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Copper Ingot",
@@ -1647,6 +1696,7 @@
             },
             "Steamed Copper Sheet": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Copper Ingot",
@@ -1665,12 +1715,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#634639"
     },
     "Crude Oil": {
         "recipes": {
             "Unpackage Oil": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Packaged Oil",
@@ -1689,12 +1742,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#000000"
     },
     "Crystal Oscillator": {
         "recipes": {
             "Crystal Oscillator": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Quartz Crystal",
@@ -1719,6 +1775,7 @@
             },
             "Insulated Crystal Oscillator": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Quartz Crystal",
@@ -1741,12 +1798,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#080808"
     },
     "Dark Matter Crystal": {
         "recipes": {
             "Dark Matter Crystal": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Diamonds",
@@ -1767,6 +1827,7 @@
             },
             "Dark Matter Crystallization": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Dark Matter Residue",
@@ -1783,6 +1844,7 @@
             },
             "Dark Matter Trap": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Time Crystal",
@@ -1801,12 +1863,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#000000"
     },
     "Diamonds": {
         "recipes": {
             "Diamonds": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Coal",
@@ -1823,6 +1888,7 @@
             },
             "Cloudy Diamonds": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Coal",
@@ -1843,6 +1909,7 @@
             },
             "Oil-Based Diamonds": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Crude Oil",
@@ -1859,6 +1926,7 @@
             },
             "Petroleum Diamonds": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Petroleum Coke",
@@ -1875,6 +1943,7 @@
             },
             "Pink Diamonds": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Coal",
@@ -1895,6 +1964,7 @@
             },
             "Turbo Diamonds": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Coal",
@@ -1913,12 +1983,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#743a13"
     },
     "Electromagnetic Control Rod": {
         "recipes": {
             "Electromagnetic Control Rod": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Stator",
@@ -1939,6 +2012,7 @@
             },
             "Electromagnetic Connection Rod": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Stator",
@@ -1957,12 +2031,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#292d31"
     },
     "Empty Canister": {
         "recipes": {
             "Empty Canister": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Plastic",
@@ -1977,8 +2054,9 @@
                     }
                 ]
             },
-            "Unpackage Alumina Solution As byproduct": {
+            "Unpackage Alumina Solution": {
                 "alternate": false,
+                "byproduct": true,
                 "ingredients": [
                     {
                         "item_name": "Packaged Alumina Solution",
@@ -1997,8 +2075,9 @@
                     }
                 ]
             },
-            "Unpackage Fuel As byproduct": {
+            "Unpackage Fuel": {
                 "alternate": false,
+                "byproduct": true,
                 "ingredients": [
                     {
                         "item_name": "Packaged Fuel",
@@ -2017,8 +2096,9 @@
                     }
                 ]
             },
-            "Unpackage Heavy Oil Residue As byproduct": {
+            "Unpackage Heavy Oil Residue": {
                 "alternate": false,
+                "byproduct": true,
                 "ingredients": [
                     {
                         "item_name": "Packaged Heavy Oil Residue",
@@ -2037,8 +2117,9 @@
                     }
                 ]
             },
-            "Unpackage Liquid Biofuel As byproduct": {
+            "Unpackage Liquid Biofuel": {
                 "alternate": false,
+                "byproduct": true,
                 "ingredients": [
                     {
                         "item_name": "Packaged Liquid Biofuel",
@@ -2057,8 +2138,9 @@
                     }
                 ]
             },
-            "Unpackage Oil As byproduct": {
+            "Unpackage Oil": {
                 "alternate": false,
+                "byproduct": true,
                 "ingredients": [
                     {
                         "item_name": "Packaged Oil",
@@ -2077,8 +2159,9 @@
                     }
                 ]
             },
-            "Unpackage Sulfuric Acid As byproduct": {
+            "Unpackage Sulfuric Acid": {
                 "alternate": false,
+                "byproduct": true,
                 "ingredients": [
                     {
                         "item_name": "Packaged Sulfuric Acid",
@@ -2097,8 +2180,9 @@
                     }
                 ]
             },
-            "Unpackage Turbofuel As byproduct": {
+            "Unpackage Turbofuel": {
                 "alternate": false,
+                "byproduct": true,
                 "ingredients": [
                     {
                         "item_name": "Packaged Turbofuel",
@@ -2117,8 +2201,9 @@
                     }
                 ]
             },
-            "Unpackage Water As byproduct": {
+            "Unpackage Water": {
                 "alternate": false,
+                "byproduct": true,
                 "ingredients": [
                     {
                         "item_name": "Packaged Water",
@@ -2139,6 +2224,7 @@
             },
             "Coated Iron Canister": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Iron Plate",
@@ -2159,6 +2245,7 @@
             },
             "Steel Canister": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Steel Ingot",
@@ -2173,12 +2260,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#000000"
     },
     "Empty Fluid Tank": {
         "recipes": {
             "Empty Fluid Tank": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Aluminum Ingot",
@@ -2193,8 +2283,9 @@
                     }
                 ]
             },
-            "Unpackage Ionized Fuel As byproduct": {
+            "Unpackage Ionized Fuel": {
                 "alternate": false,
+                "byproduct": true,
                 "ingredients": [
                     {
                         "item_name": "Packaged Ionized Fuel",
@@ -2213,8 +2304,9 @@
                     }
                 ]
             },
-            "Unpackage Nitric Acid As byproduct": {
+            "Unpackage Nitric Acid": {
                 "alternate": false,
+                "byproduct": true,
                 "ingredients": [
                     {
                         "item_name": "Packaged Nitric Acid",
@@ -2233,8 +2325,9 @@
                     }
                 ]
             },
-            "Unpackage Nitrogen Gas As byproduct": {
+            "Unpackage Nitrogen Gas": {
                 "alternate": false,
+                "byproduct": true,
                 "ingredients": [
                     {
                         "item_name": "Packaged Nitrogen Gas",
@@ -2253,8 +2346,9 @@
                     }
                 ]
             },
-            "Unpackage Rocket Fuel As byproduct": {
+            "Unpackage Rocket Fuel": {
                 "alternate": false,
+                "byproduct": true,
                 "ingredients": [
                     {
                         "item_name": "Packaged Rocket Fuel",
@@ -2273,12 +2367,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#a29ca2"
     },
     "Encased Industrial Beam": {
         "recipes": {
             "Encased Industrial Beam": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Steel Beam",
@@ -2299,6 +2396,7 @@
             },
             "Encased Industrial Pipe": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Steel Pipe",
@@ -2317,12 +2415,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#ded6bd"
     },
     "Encased Plutonium Cell": {
         "recipes": {
             "Encased Plutonium Cell": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Plutonium Pellet",
@@ -2343,6 +2444,7 @@
             },
             "Instant Plutonium Cell": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Non-Fissile Uranium",
@@ -2361,12 +2463,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#f7ffff"
     },
     "Encased Uranium Cell": {
         "recipes": {
             "Encased Uranium Cell": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Uranium",
@@ -2395,6 +2500,7 @@
             },
             "Infused Uranium Cell": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Uranium",
@@ -2421,12 +2527,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#000000"
     },
     "Fabric": {
         "recipes": {
             "Fabric": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Mycelia",
@@ -2447,6 +2556,7 @@
             },
             "Polyester Fabric": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Polymer Resin",
@@ -2465,12 +2575,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#ded6ce"
     },
     "Ficsite Ingot": {
         "recipes": {
             "Ficsite Ingot (Aluminum)": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Reanimated SAM",
@@ -2491,6 +2604,7 @@
             },
             "Ficsite Ingot (Caterium)": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Reanimated SAM",
@@ -2511,6 +2625,7 @@
             },
             "Ficsite Ingot (Iron)": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Reanimated SAM",
@@ -2529,12 +2644,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#591f00"
     },
     "Ficsite Trigon": {
         "recipes": {
             "Ficsite Trigon": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Ficsite Ingot",
@@ -2549,12 +2667,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#c15a00"
     },
     "Ficsonium": {
         "recipes": {
             "Ficsonium": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Plutonium Waste",
@@ -2577,12 +2698,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#feffdf"
     },
     "Ficsonium Fuel Rod": {
         "recipes": {
             "Ficsonium Fuel Rod": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Ficsonium",
@@ -2613,12 +2737,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#fff65d"
     },
     "Fused Modular Frame": {
         "recipes": {
             "Fused Modular Frame": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Heavy Modular Frame",
@@ -2643,6 +2770,7 @@
             },
             "Heat-Fused Frame": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Heavy Modular Frame",
@@ -2669,12 +2797,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#adb5c6"
     },
     "Heat Sink": {
         "recipes": {
             "Heat Sink": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Alclad Aluminum Sheet",
@@ -2695,6 +2826,7 @@
             },
             "Heat Exchanger": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Aluminum Casing",
@@ -2713,12 +2845,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#8c8c8c"
     },
     "Heavy Modular Frame": {
         "recipes": {
             "Heavy Modular Frame": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Modular Frame",
@@ -2747,6 +2882,7 @@
             },
             "Heavy Encased Frame": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Modular Frame",
@@ -2775,6 +2911,7 @@
             },
             "Heavy Flexible Frame": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Modular Frame",
@@ -2801,12 +2938,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#292921"
     },
     "High-Speed Connector": {
         "recipes": {
             "High-Speed Connector": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Quickwire",
@@ -2831,6 +2971,7 @@
             },
             "Silicon High-Speed Connector": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Quickwire",
@@ -2853,12 +2994,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#293131"
     },
     "Iron Ingot": {
         "recipes": {
             "Iron Ingot": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Iron Ore",
@@ -2875,6 +3019,7 @@
             },
             "Basic Iron Ingot": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Iron Ore",
@@ -2895,6 +3040,7 @@
             },
             "Iron Alloy Ingot": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Iron Ore",
@@ -2915,6 +3061,7 @@
             },
             "Leached Iron ingot": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Iron Ore",
@@ -2935,6 +3082,7 @@
             },
             "Pure Iron Ingot": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Iron Ore",
@@ -2953,12 +3101,19 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#7b7b6b"
+    },
+    "Iron Ore": {
+        "primary": true,
+        "hex_color": "#848494"
     },
     "Iron Plate": {
         "recipes": {
             "Iron Plate": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Iron Ingot",
@@ -2975,6 +3130,7 @@
             },
             "Coated Iron Plate": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Iron Ingot",
@@ -2995,6 +3151,7 @@
             },
             "Steel Cast Plate": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Iron Ingot",
@@ -3013,12 +3170,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#dedede"
     },
     "Iron Rod": {
         "recipes": {
             "Iron Rod": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Iron Ingot",
@@ -3035,6 +3195,7 @@
             },
             "Aluminum Rod": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Aluminum Ingot",
@@ -3051,6 +3212,7 @@
             },
             "Steel Rod": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Steel Ingot",
@@ -3065,12 +3227,23 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#4a4e52"
+    },
+    "Leaves": {
+        "primary": true,
+        "hex_color": "#213921"
+    },
+    "Limestone": {
+        "primary": true,
+        "hex_color": "#bdb5ad"
     },
     "Magnetic Field Generator": {
         "recipes": {
             "Magnetic Field Generator": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Versatile Framework",
@@ -3089,12 +3262,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#292d31"
     },
     "Miner": {
         "recipes": {
             "Portable Miner": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Iron Plate",
@@ -3115,6 +3291,7 @@
             },
             "Automated Miner": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Steel Pipe",
@@ -3133,12 +3310,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#000000"
     },
     "Modular Engine": {
         "recipes": {
             "Modular Engine": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Motor",
@@ -3161,12 +3341,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#101010"
     },
     "Modular Frame": {
         "recipes": {
             "Modular Frame": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Reinforced Iron Plate",
@@ -3187,6 +3370,7 @@
             },
             "Bolted Frame": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Reinforced Iron Plate",
@@ -3207,6 +3391,7 @@
             },
             "Steeled Frame": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Reinforced Iron Plate",
@@ -3225,12 +3410,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#7b7b73"
     },
     "Motor": {
         "recipes": {
             "Motor": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Rotor",
@@ -3251,6 +3439,7 @@
             },
             "Electric Motor": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Electromagnetic Control Rod",
@@ -3271,6 +3460,7 @@
             },
             "Rigor Motor": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Rotor",
@@ -3293,12 +3483,19 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#524e4a"
+    },
+    "Mycelia": {
+        "primary": true,
+        "hex_color": "#b5b5b5"
     },
     "Neural-Quantum Processor": {
         "recipes": {
             "Neural-Quantum Processor": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Time Crystal",
@@ -3329,12 +3526,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#201c43"
     },
     "Non-Fissile Uranium": {
         "recipes": {
             "Non-Fissile Uranium": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Uranium Waste",
@@ -3367,6 +3567,7 @@
             },
             "Fertile Uranium": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Uranium",
@@ -3397,12 +3598,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#e7de42"
     },
     "Nuclear Pasta": {
         "recipes": {
             "Nuclear Pasta": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Copper Powder",
@@ -3421,12 +3625,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#080808"
     },
     "Packaged Alumina Solution": {
         "recipes": {
             "Packaged Alumina Solution": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Alumina Solution",
@@ -3445,12 +3652,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#d6d6de"
     },
     "Packaged Fuel": {
         "recipes": {
             "Packaged Fuel": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Fuel",
@@ -3471,6 +3681,7 @@
             },
             "Diluted Packaged Fuel": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Heavy Oil Residue",
@@ -3489,12 +3700,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#ffc663"
     },
     "Packaged Heavy Oil Residue": {
         "recipes": {
             "Packaged Heavy Oil Residue": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Heavy Oil Residue",
@@ -3513,12 +3727,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#6e0089"
     },
     "Packaged Ionized Fuel": {
         "recipes": {
             "Packaged Ionized Fuel": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Ionized Fuel",
@@ -3537,12 +3754,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#000005"
     },
     "Packaged Liquid Biofuel": {
         "recipes": {
             "Packaged Liquid Biofuel": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Liquid Biofuel",
@@ -3561,12 +3781,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#101010"
     },
     "Packaged Nitric Acid": {
         "recipes": {
             "Packaged Nitric Acid": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Nitric Acid",
@@ -3585,12 +3808,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#dedede"
     },
     "Packaged Nitrogen Gas": {
         "recipes": {
             "Packaged Nitrogen Gas": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Nitrogen Gas",
@@ -3609,12 +3835,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#adadbd"
     },
     "Packaged Oil": {
         "recipes": {
             "Packaged Oil": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Crude Oil",
@@ -3633,12 +3862,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#181418"
     },
     "Packaged Rocket Fuel": {
         "recipes": {
             "Packaged Rocket Fuel": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Rocket Fuel",
@@ -3657,12 +3889,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#590100"
     },
     "Packaged Sulfuric Acid": {
         "recipes": {
             "Packaged Sulfuric Acid": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Sulfuric Acid",
@@ -3681,12 +3916,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#55555d"
     },
     "Packaged Turbofuel": {
         "recipes": {
             "Packaged Turbofuel": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Turbofuel",
@@ -3705,12 +3943,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#a50008"
     },
     "Packaged Water": {
         "recipes": {
             "Packaged Water": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Water",
@@ -3729,12 +3970,19 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#315e84"
+    },
+    "Paleberry": {
+        "primary": true,
+        "hex_color": "#e76f52"
     },
     "Petroleum Coke": {
         "recipes": {
             "Petroleum Coke": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Heavy Oil Residue",
@@ -3749,12 +3997,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#000000"
     },
     "Plastic": {
         "recipes": {
             "Plastic": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Crude Oil",
@@ -3775,6 +4026,7 @@
             },
             "Residual Plastic": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Polymer Resin",
@@ -3795,6 +4047,7 @@
             },
             "Recycled Plastic": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Rubber",
@@ -3813,12 +4066,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#1884de"
     },
     "Plutonium Fuel Rod": {
         "recipes": {
             "Plutonium Fuel Rod": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Encased Plutonium Cell",
@@ -3847,6 +4103,7 @@
             },
             "Plutonium Fuel Unit": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Encased Plutonium Cell",
@@ -3865,12 +4122,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#faffff"
     },
     "Plutonium Pellet": {
         "recipes": {
             "Plutonium Pellet": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Non-Fissile Uranium",
@@ -3889,12 +4149,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#636b63"
     },
     "Plutonium Waste": {
         "recipes": {
             "Plutonium Fuel Rod (burning)": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Plutonium Fuel Rod",
@@ -3913,12 +4176,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#b5ad29"
     },
     "Polymer Resin": {
         "recipes": {
-            "Fuel As byproduct": {
+            "Fuel": {
                 "alternate": false,
+                "byproduct": true,
                 "ingredients": [
                     {
                         "item_name": "Crude Oil",
@@ -3939,6 +4205,7 @@
             },
             "Heavy Oil ResidueAlternate As ": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Crude Oil",
@@ -3959,6 +4226,7 @@
             },
             "Polymer Resin": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Crude Oil",
@@ -3977,12 +4245,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#000073"
     },
     "Power Shard": {
         "recipes": {
             "Power Shard (1)": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Blue Power Slug",
@@ -3999,6 +4270,7 @@
             },
             "Power Shard (2)": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Yellow Power Slug",
@@ -4015,6 +4287,7 @@
             },
             "Power Shard (5)": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Purple Power Slug",
@@ -4031,6 +4304,7 @@
             },
             "Synthetic Power Shard": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Time Crystal",
@@ -4061,12 +4335,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#de8c42"
     },
     "Power Slug": {
         "recipes": {
             "Power Shard (1)": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Blue Power Slug",
@@ -4083,6 +4360,7 @@
             },
             "Power Shard (2)": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Yellow Power Slug",
@@ -4099,6 +4377,7 @@
             },
             "Power Shard (5)": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Purple Power Slug",
@@ -4113,12 +4392,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#a8c9e7"
     },
     "Pressure Conversion Cube": {
         "recipes": {
             "Pressure Conversion Cube": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Fused Modular Frame",
@@ -4137,12 +4419,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#181821"
     },
     "Quartz Crystal": {
         "recipes": {
             "Quartz Crystal": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Raw Quartz",
@@ -4159,6 +4444,7 @@
             },
             "Fused Quartz Crystal": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Raw Quartz",
@@ -4179,6 +4465,7 @@
             },
             "Pure Quartz Crystal": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Raw Quartz",
@@ -4199,6 +4486,7 @@
             },
             "Quartz Purification": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Raw Quartz",
@@ -4221,12 +4509,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#081473"
     },
     "Quickwire": {
         "recipes": {
             "Quickwire": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Caterium Ingot",
@@ -4243,6 +4534,7 @@
             },
             "Fused Quickwire": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Caterium Ingot",
@@ -4261,12 +4553,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#313542"
     },
     "Radio Control Unit": {
         "recipes": {
             "Radio Control Unit": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Aluminum Casing",
@@ -4291,6 +4586,7 @@
             },
             "Radio Connection Unit": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Heat Sink",
@@ -4315,6 +4611,7 @@
             },
             "Radio Control System": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Crystal Oscillator",
@@ -4341,12 +4638,19 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#101010"
+    },
+    "Raw Quartz": {
+        "primary": true,
+        "hex_color": "#e7b5de"
     },
     "Reanimated SAM": {
         "recipes": {
             "Reanimated SAM": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "SAM",
@@ -4361,12 +4665,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#3e3646"
     },
     "Reinforced Iron Plate": {
         "recipes": {
             "Reinforced Iron Plate": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Iron Plate",
@@ -4387,6 +4694,7 @@
             },
             "Adhered Iron Plate": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Iron Plate",
@@ -4407,6 +4715,7 @@
             },
             "Bolted Iron Plate": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Iron Plate",
@@ -4427,6 +4736,7 @@
             },
             "Stitched Iron Plate": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Iron Plate",
@@ -4445,12 +4755,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#8c94ad"
     },
     "Rotor": {
         "recipes": {
             "Rotor": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Iron Rod",
@@ -4471,6 +4784,7 @@
             },
             "Copper Rotor": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Copper Sheet",
@@ -4491,6 +4805,7 @@
             },
             "Steel Rotor": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Steel Pipe",
@@ -4509,12 +4824,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#000000"
     },
     "Rubber": {
         "recipes": {
             "Residual Rubber": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Polymer Resin",
@@ -4535,6 +4853,7 @@
             },
             "Rubber": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Crude Oil",
@@ -4555,6 +4874,7 @@
             },
             "Recycled Rubber": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Plastic",
@@ -4573,12 +4893,19 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#181818"
+    },
+    "SAM": {
+        "primary": true,
+        "hex_color": "#42187b"
     },
     "SAM Fluctuator": {
         "recipes": {
             "SAM Fluctuator": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Reanimated SAM",
@@ -4601,12 +4928,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#ffc372"
     },
     "Screw": {
         "recipes": {
             "Screw": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Iron Rod",
@@ -4623,6 +4953,7 @@
             },
             "Cast Screw": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Iron Ingot",
@@ -4639,6 +4970,7 @@
             },
             "Steel Screw": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Steel Beam",
@@ -4653,12 +4985,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#184aad"
     },
     "Silica": {
         "recipes": {
-            "Alumina Solution As byproduct": {
+            "Alumina Solution": {
                 "alternate": false,
+                "byproduct": true,
                 "ingredients": [
                     {
                         "item_name": "Bauxite",
@@ -4683,6 +5018,7 @@
             },
             "Silica": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Raw Quartz",
@@ -4699,6 +5035,7 @@
             },
             "Cheap Silica": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Raw Quartz",
@@ -4719,6 +5056,7 @@
             },
             "Distilled Silica": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Dissolved Silica",
@@ -4745,12 +5083,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#d6d6de"
     },
     "Singularity Cell": {
         "recipes": {
             "Singularity Cell": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Nuclear Pasta",
@@ -4777,12 +5118,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#ffffff"
     },
     "Smart Plating": {
         "recipes": {
             "Smart Plating": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Reinforced Iron Plate",
@@ -4803,6 +5147,7 @@
             },
             "Plastic Smart Plating": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Reinforced Iron Plate",
@@ -4825,12 +5170,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#212121"
     },
     "Smokeless Powder": {
         "recipes": {
             "Smokeless Powder": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Black Powder",
@@ -4849,12 +5197,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#080808"
     },
     "Solid Biofuel": {
         "recipes": {
             "Solid Biofuel": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Biomass",
@@ -4869,12 +5220,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#312518"
     },
     "Stator": {
         "recipes": {
             "Stator": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Steel Pipe",
@@ -4895,6 +5249,7 @@
             },
             "Quickwire Stator": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Steel Pipe",
@@ -4913,12 +5268,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#4a4a4a"
     },
     "Steel Beam": {
         "recipes": {
             "Steel Beam": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Steel Ingot",
@@ -4935,6 +5293,7 @@
             },
             "Aluminum Beam": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Aluminum Ingot",
@@ -4951,6 +5310,7 @@
             },
             "Molded Beam": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Steel Ingot",
@@ -4969,12 +5329,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#100f0b"
     },
     "Steel Ingot": {
         "recipes": {
             "Steel Ingot": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Iron Ore",
@@ -4995,6 +5358,7 @@
             },
             "Coke Steel Ingot": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Iron Ore",
@@ -5015,6 +5379,7 @@
             },
             "Compacted Steel Ingot": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Iron Ore",
@@ -5035,6 +5400,7 @@
             },
             "Solid Steel Ingot": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Iron Ingot",
@@ -5053,12 +5419,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#393d4a"
     },
     "Steel Pipe": {
         "recipes": {
             "Steel Pipe": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Steel Ingot",
@@ -5075,6 +5444,7 @@
             },
             "Iron Pipe": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Iron Ingot",
@@ -5091,6 +5461,7 @@
             },
             "Molded Steel Pipe": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Steel Ingot",
@@ -5109,12 +5480,19 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#313131"
+    },
+    "Sulfur": {
+        "primary": true,
+        "hex_color": "#cebd63"
     },
     "Supercomputer": {
         "recipes": {
             "Supercomputer": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Computer",
@@ -5143,6 +5521,7 @@
             },
             "OC Supercomputer": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Radio Control Unit",
@@ -5163,6 +5542,7 @@
             },
             "Super-State Computer": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Computer",
@@ -5189,12 +5569,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#080808"
     },
     "Superposition Oscillator": {
         "recipes": {
             "Superposition Oscillator": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Dark Matter Crystal",
@@ -5225,12 +5608,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#ffffff"
     },
     "Thermal Propulsion Rocket": {
         "recipes": {
             "Thermal Propulsion Rocket": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Modular Engine",
@@ -5257,12 +5643,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#292929"
     },
     "Time Crystal": {
         "recipes": {
             "Time Crystal": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Diamonds",
@@ -5277,12 +5666,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#cdc2ca"
     },
     "Turbo Motor": {
         "recipes": {
             "Turbo Motor": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Cooling System",
@@ -5311,6 +5703,7 @@
             },
             "Turbo Electric Motor": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Motor",
@@ -5339,6 +5732,7 @@
             },
             "Turbo Pressure Motor": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Motor",
@@ -5365,12 +5759,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#000000"
     },
     "Uranium": {
         "recipes": {
             "Uranium Ore (Bauxite)": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Reanimated SAM",
@@ -5389,12 +5786,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#000800"
     },
     "Uranium Fuel Rod": {
         "recipes": {
             "Uranium Fuel Rod": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Encased Uranium Cell",
@@ -5419,6 +5819,7 @@
             },
             "Uranium Fuel Unit": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Encased Uranium Cell",
@@ -5445,12 +5846,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#312d21"
     },
     "Uranium Waste": {
         "recipes": {
             "Uranium Fuel Rod (burning)": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Uranium Fuel Rod",
@@ -5469,12 +5873,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#d6ce00"
     },
     "Versatile Framework": {
         "recipes": {
             "Versatile Framework": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Modular Frame",
@@ -5495,6 +5902,7 @@
             },
             "Flexible Framework": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Modular Frame",
@@ -5517,12 +5925,15 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#000000"
     },
     "Wire": {
         "recipes": {
             "Wire": {
                 "alternate": false,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Copper Ingot",
@@ -5539,6 +5950,7 @@
             },
             "Caterium Wire": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Caterium Ingot",
@@ -5555,6 +5967,7 @@
             },
             "Fused Wire": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Copper Ingot",
@@ -5575,6 +5988,7 @@
             },
             "Iron Wire": {
                 "alternate": true,
+                "byproduct": false,
                 "ingredients": [
                     {
                         "item_name": "Iron Ingot",
@@ -5589,6 +6003,12 @@
                     }
                 ]
             }
-        }
+        },
+        "primary": false,
+        "hex_color": "#b5ad9c"
+    },
+    "Wood": {
+        "primary": true,
+        "hex_color": "#b5a584"
     }
 }
