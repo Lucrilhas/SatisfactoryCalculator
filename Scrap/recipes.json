@@ -1,39 +1,4 @@
 {
-    "Adaptive Control Unit": {
-        "recipes": {
-            "Adaptive Control Unit": {
-                "alternate": false,
-                "byproduct": false,
-                "ingredients": [
-                    {
-                        "item_name": "Automated Wiring",
-                        "item_per_min": "5"
-                    },
-                    {
-                        "item_name": "Circuit Board",
-                        "item_per_min": "5"
-                    },
-                    {
-                        "item_name": "Heavy Modular Frame",
-                        "item_per_min": "1"
-                    },
-                    {
-                        "item_name": "Computer",
-                        "item_per_min": "2"
-                    }
-                ],
-                "produced_in": "Manufacturer",
-                "products": [
-                    {
-                        "item_name": "Adaptive Control Unit",
-                        "item_per_min": "1"
-                    }
-                ]
-            }
-        },
-        "primary": false,
-        "hex_color": "#181818"
-    },
     "AI Expansion Server": {
         "recipes": {
             "AI Expansion Server": {
@@ -120,6 +85,41 @@
         },
         "primary": false,
         "hex_color": "#1b1c1e"
+    },
+    "Adaptive Control Unit": {
+        "recipes": {
+            "Adaptive Control Unit": {
+                "alternate": false,
+                "byproduct": false,
+                "ingredients": [
+                    {
+                        "item_name": "Automated Wiring",
+                        "item_per_min": "5"
+                    },
+                    {
+                        "item_name": "Circuit Board",
+                        "item_per_min": "5"
+                    },
+                    {
+                        "item_name": "Heavy Modular Frame",
+                        "item_per_min": "1"
+                    },
+                    {
+                        "item_name": "Computer",
+                        "item_per_min": "2"
+                    }
+                ],
+                "produced_in": "Manufacturer",
+                "products": [
+                    {
+                        "item_name": "Adaptive Control Unit",
+                        "item_per_min": "1"
+                    }
+                ]
+            }
+        },
+        "primary": false,
+        "hex_color": "#181818"
     },
     "Alclad Aluminum Sheet": {
         "recipes": {
@@ -357,6 +357,79 @@
         },
         "primary": false,
         "hex_color": "#9c849c"
+    },
+    "Alumina Solution": {
+        "recipes": {
+            "Alumina Solution": {
+                "alternate": false,
+                "byproduct": false,
+                "ingredients": [
+                    {
+                        "item_name": "Bauxite",
+                        "item_per_min": "120"
+                    },
+                    {
+                        "item_name": "Water",
+                        "item_per_min": "180"
+                    }
+                ],
+                "produced_in": "Refinery",
+                "products": [
+                    {
+                        "item_name": "Alumina Solution",
+                        "item_per_min": "120"
+                    },
+                    {
+                        "item_name": "Silica",
+                        "item_per_min": "50"
+                    }
+                ]
+            },
+            "Unpackage Alumina Solution": {
+                "alternate": false,
+                "byproduct": false,
+                "ingredients": [
+                    {
+                        "item_name": "Packaged Alumina Solution",
+                        "item_per_min": "120"
+                    }
+                ],
+                "produced_in": "Packager",
+                "products": [
+                    {
+                        "item_name": "Alumina Solution",
+                        "item_per_min": "120"
+                    },
+                    {
+                        "item_name": "Empty Canister",
+                        "item_per_min": "120"
+                    }
+                ]
+            },
+            "Sloppy Alumina": {
+                "alternate": true,
+                "byproduct": false,
+                "ingredients": [
+                    {
+                        "item_name": "Bauxite",
+                        "item_per_min": "200"
+                    },
+                    {
+                        "item_name": "Water",
+                        "item_per_min": "200"
+                    }
+                ],
+                "produced_in": "Refinery",
+                "products": [
+                    {
+                        "item_name": "Alumina Solution",
+                        "item_per_min": "240"
+                    }
+                ]
+            }
+        },
+        "primary": false,
+        "hex_color": "#e4dee1"
     },
     "Aluminum Casing": {
         "recipes": {
@@ -1720,30 +1793,7 @@
         "hex_color": "#634639"
     },
     "Crude Oil": {
-        "recipes": {
-            "Unpackage Oil": {
-                "alternate": false,
-                "byproduct": false,
-                "ingredients": [
-                    {
-                        "item_name": "Packaged Oil",
-                        "item_per_min": "60"
-                    }
-                ],
-                "produced_in": "Packager",
-                "products": [
-                    {
-                        "item_name": "Crude Oil",
-                        "item_per_min": "60"
-                    },
-                    {
-                        "item_name": "Empty Canister",
-                        "item_per_min": "60"
-                    }
-                ]
-            }
-        },
-        "primary": false,
+        "primary": true,
         "hex_color": "#000000"
     },
     "Crystal Oscillator": {
@@ -1867,6 +1917,227 @@
         "primary": false,
         "hex_color": "#000000"
     },
+    "Dark Matter Residue": {
+        "recipes": {
+            "AI Expansion Server": {
+                "alternate": false,
+                "byproduct": true,
+                "ingredients": [
+                    {
+                        "item_name": "Magnetic Field Generator",
+                        "item_per_min": "4"
+                    },
+                    {
+                        "item_name": "Neural-Quantum Processor",
+                        "item_per_min": "4"
+                    },
+                    {
+                        "item_name": "Superposition Oscillator",
+                        "item_per_min": "4"
+                    },
+                    {
+                        "item_name": "Excited Photonic Matter",
+                        "item_per_min": "100"
+                    }
+                ],
+                "produced_in": "Quantum Encoder",
+                "products": [
+                    {
+                        "item_name": "AI Expansion Server",
+                        "item_per_min": "4"
+                    },
+                    {
+                        "item_name": "Dark Matter Residue",
+                        "item_per_min": "100"
+                    }
+                ]
+            },
+            "Alien Power Matrix": {
+                "alternate": false,
+                "byproduct": true,
+                "ingredients": [
+                    {
+                        "item_name": "SAM Fluctuator",
+                        "item_per_min": "12.5"
+                    },
+                    {
+                        "item_name": "Power Shard",
+                        "item_per_min": "7.5"
+                    },
+                    {
+                        "item_name": "Superposition Oscillator",
+                        "item_per_min": "7.5"
+                    },
+                    {
+                        "item_name": "Excited Photonic Matter",
+                        "item_per_min": "60"
+                    }
+                ],
+                "produced_in": "Quantum Encoder",
+                "products": [
+                    {
+                        "item_name": "Alien Power Matrix",
+                        "item_per_min": "2.5"
+                    },
+                    {
+                        "item_name": "Dark Matter Residue",
+                        "item_per_min": "60"
+                    }
+                ]
+            },
+            "Dark Matter Residue": {
+                "alternate": false,
+                "byproduct": false,
+                "ingredients": [
+                    {
+                        "item_name": "Reanimated SAM",
+                        "item_per_min": "50"
+                    }
+                ],
+                "produced_in": "Converter",
+                "products": [
+                    {
+                        "item_name": "Dark Matter Residue",
+                        "item_per_min": "100"
+                    }
+                ]
+            },
+            "Ficsonium Fuel Rod": {
+                "alternate": false,
+                "byproduct": true,
+                "ingredients": [
+                    {
+                        "item_name": "Ficsonium",
+                        "item_per_min": "5"
+                    },
+                    {
+                        "item_name": "Electromagnetic Control Rod",
+                        "item_per_min": "5"
+                    },
+                    {
+                        "item_name": "Ficsite Trigon",
+                        "item_per_min": "100"
+                    },
+                    {
+                        "item_name": "Excited Photonic Matter",
+                        "item_per_min": "50"
+                    }
+                ],
+                "produced_in": "Quantum Encoder",
+                "products": [
+                    {
+                        "item_name": "Ficsonium Fuel Rod",
+                        "item_per_min": "2.5"
+                    },
+                    {
+                        "item_name": "Dark Matter Residue",
+                        "item_per_min": "50"
+                    }
+                ]
+            },
+            "Neural-Quantum Processor": {
+                "alternate": false,
+                "byproduct": true,
+                "ingredients": [
+                    {
+                        "item_name": "Time Crystal",
+                        "item_per_min": "15"
+                    },
+                    {
+                        "item_name": "Supercomputer",
+                        "item_per_min": "3"
+                    },
+                    {
+                        "item_name": "Ficsite Trigon",
+                        "item_per_min": "45"
+                    },
+                    {
+                        "item_name": "Excited Photonic Matter",
+                        "item_per_min": "75"
+                    }
+                ],
+                "produced_in": "Quantum Encoder",
+                "products": [
+                    {
+                        "item_name": "Neural-Quantum Processor",
+                        "item_per_min": "3"
+                    },
+                    {
+                        "item_name": "Dark Matter Residue",
+                        "item_per_min": "75"
+                    }
+                ]
+            },
+            "Superposition Oscillator": {
+                "alternate": false,
+                "byproduct": true,
+                "ingredients": [
+                    {
+                        "item_name": "Dark Matter Crystal",
+                        "item_per_min": "30"
+                    },
+                    {
+                        "item_name": "Crystal Oscillator",
+                        "item_per_min": "5"
+                    },
+                    {
+                        "item_name": "Alclad Aluminum Sheet",
+                        "item_per_min": "45"
+                    },
+                    {
+                        "item_name": "Excited Photonic Matter",
+                        "item_per_min": "125"
+                    }
+                ],
+                "produced_in": "Quantum Encoder",
+                "products": [
+                    {
+                        "item_name": "Superposition Oscillator",
+                        "item_per_min": "5"
+                    },
+                    {
+                        "item_name": "Dark Matter Residue",
+                        "item_per_min": "125"
+                    }
+                ]
+            },
+            "Synthetic Power Shard": {
+                "alternate": false,
+                "byproduct": true,
+                "ingredients": [
+                    {
+                        "item_name": "Time Crystal",
+                        "item_per_min": "10"
+                    },
+                    {
+                        "item_name": "Dark Matter Crystal",
+                        "item_per_min": "10"
+                    },
+                    {
+                        "item_name": "Quartz Crystal",
+                        "item_per_min": "60"
+                    },
+                    {
+                        "item_name": "Excited Photonic Matter",
+                        "item_per_min": "60"
+                    }
+                ],
+                "produced_in": "Quantum Encoder",
+                "products": [
+                    {
+                        "item_name": "Power Shard",
+                        "item_per_min": "5"
+                    },
+                    {
+                        "item_name": "Dark Matter Residue",
+                        "item_per_min": "60"
+                    }
+                ]
+            }
+        },
+        "primary": false,
+        "hex_color": "#ffffff"
+    },
     "Diamonds": {
         "recipes": {
             "Diamonds": {
@@ -1986,6 +2257,37 @@
         },
         "primary": false,
         "hex_color": "#743a13"
+    },
+    "Dissolved Silica": {
+        "recipes": {
+            "Quartz PurificationAlternate As ": {
+                "alternate": true,
+                "byproduct": false,
+                "ingredients": [
+                    {
+                        "item_name": "Raw Quartz",
+                        "item_per_min": "120"
+                    },
+                    {
+                        "item_name": "Nitric Acid",
+                        "item_per_min": "10"
+                    }
+                ],
+                "produced_in": "Refinery",
+                "products": [
+                    {
+                        "item_name": "Quartz Crystal",
+                        "item_per_min": "75"
+                    },
+                    {
+                        "item_name": "Dissolved Silica",
+                        "item_per_min": "60"
+                    }
+                ]
+            }
+        },
+        "primary": false,
+        "hex_color": "#eacae4"
     },
     "Electromagnetic Control Rod": {
         "recipes": {
@@ -2531,6 +2833,10 @@
         "primary": false,
         "hex_color": "#000000"
     },
+    "Excited Photonic Matter": {
+        "primary": true,
+        "hex_color": "#fffffe"
+    },
     "Fabric": {
         "recipes": {
             "Fabric": {
@@ -2741,6 +3047,92 @@
         "primary": false,
         "hex_color": "#fff65d"
     },
+    "Fuel": {
+        "recipes": {
+            "Fuel": {
+                "alternate": false,
+                "byproduct": false,
+                "ingredients": [
+                    {
+                        "item_name": "Crude Oil",
+                        "item_per_min": "60"
+                    }
+                ],
+                "produced_in": "Refinery",
+                "products": [
+                    {
+                        "item_name": "Fuel",
+                        "item_per_min": "40"
+                    },
+                    {
+                        "item_name": "Polymer Resin",
+                        "item_per_min": "30"
+                    }
+                ]
+            },
+            "Residual Fuel": {
+                "alternate": false,
+                "byproduct": false,
+                "ingredients": [
+                    {
+                        "item_name": "Heavy Oil Residue",
+                        "item_per_min": "60"
+                    }
+                ],
+                "produced_in": "Refinery",
+                "products": [
+                    {
+                        "item_name": "Fuel",
+                        "item_per_min": "40"
+                    }
+                ]
+            },
+            "Unpackage Fuel": {
+                "alternate": false,
+                "byproduct": false,
+                "ingredients": [
+                    {
+                        "item_name": "Packaged Fuel",
+                        "item_per_min": "60"
+                    }
+                ],
+                "produced_in": "Packager",
+                "products": [
+                    {
+                        "item_name": "Fuel",
+                        "item_per_min": "60"
+                    },
+                    {
+                        "item_name": "Empty Canister",
+                        "item_per_min": "60"
+                    }
+                ]
+            },
+            "Diluted Fuel": {
+                "alternate": true,
+                "byproduct": false,
+                "ingredients": [
+                    {
+                        "item_name": "Heavy Oil Residue",
+                        "item_per_min": "50"
+                    },
+                    {
+                        "item_name": "Water",
+                        "item_per_min": "100"
+                    }
+                ],
+                "produced_in": "Blender",
+                "products": [
+                    {
+                        "item_name": "Fuel",
+                        "item_per_min": "100"
+                    }
+                ]
+            }
+        },
+        "primary": false,
+        "hex_color": "#f99b00"
+    },
     "Fused Modular Frame": {
         "recipes": {
             "Fused Modular Frame": {
@@ -2942,6 +3334,117 @@
         "primary": false,
         "hex_color": "#292921"
     },
+    "Heavy Oil Residue": {
+        "recipes": {
+            "Plastic": {
+                "alternate": false,
+                "byproduct": true,
+                "ingredients": [
+                    {
+                        "item_name": "Crude Oil",
+                        "item_per_min": "30"
+                    }
+                ],
+                "produced_in": "Refinery",
+                "products": [
+                    {
+                        "item_name": "Plastic",
+                        "item_per_min": "20"
+                    },
+                    {
+                        "item_name": "Heavy Oil Residue",
+                        "item_per_min": "10"
+                    }
+                ]
+            },
+            "Rubber": {
+                "alternate": false,
+                "byproduct": true,
+                "ingredients": [
+                    {
+                        "item_name": "Crude Oil",
+                        "item_per_min": "30"
+                    }
+                ],
+                "produced_in": "Refinery",
+                "products": [
+                    {
+                        "item_name": "Rubber",
+                        "item_per_min": "20"
+                    },
+                    {
+                        "item_name": "Heavy Oil Residue",
+                        "item_per_min": "20"
+                    }
+                ]
+            },
+            "Unpackage Heavy Oil Residue": {
+                "alternate": false,
+                "byproduct": false,
+                "ingredients": [
+                    {
+                        "item_name": "Packaged Heavy Oil Residue",
+                        "item_per_min": "20"
+                    }
+                ],
+                "produced_in": "Packager",
+                "products": [
+                    {
+                        "item_name": "Heavy Oil Residue",
+                        "item_per_min": "20"
+                    },
+                    {
+                        "item_name": "Empty Canister",
+                        "item_per_min": "20"
+                    }
+                ]
+            },
+            "Heavy Oil Residue": {
+                "alternate": true,
+                "byproduct": false,
+                "ingredients": [
+                    {
+                        "item_name": "Crude Oil",
+                        "item_per_min": "30"
+                    }
+                ],
+                "produced_in": "Refinery",
+                "products": [
+                    {
+                        "item_name": "Heavy Oil Residue",
+                        "item_per_min": "40"
+                    },
+                    {
+                        "item_name": "Polymer Resin",
+                        "item_per_min": "20"
+                    }
+                ]
+            },
+            "Polymer ResinAlternate As ": {
+                "alternate": true,
+                "byproduct": false,
+                "ingredients": [
+                    {
+                        "item_name": "Crude Oil",
+                        "item_per_min": "60"
+                    }
+                ],
+                "produced_in": "Refinery",
+                "products": [
+                    {
+                        "item_name": "Polymer Resin",
+                        "item_per_min": "130"
+                    },
+                    {
+                        "item_name": "Heavy Oil Residue",
+                        "item_per_min": "20"
+                    }
+                ]
+            }
+        },
+        "primary": false,
+        "hex_color": "#8c21b5"
+    },
     "High-Speed Connector": {
         "recipes": {
             "High-Speed Connector": {
@@ -2997,6 +3500,83 @@
         },
         "primary": false,
         "hex_color": "#293131"
+    },
+    "Ionized Fuel": {
+        "recipes": {
+            "Ionized Fuel": {
+                "alternate": false,
+                "byproduct": false,
+                "ingredients": [
+                    {
+                        "item_name": "Rocket Fuel",
+                        "item_per_min": "40"
+                    },
+                    {
+                        "item_name": "Power Shard",
+                        "item_per_min": "2.5"
+                    }
+                ],
+                "produced_in": "Refinery",
+                "products": [
+                    {
+                        "item_name": "Ionized Fuel",
+                        "item_per_min": "40"
+                    },
+                    {
+                        "item_name": "Compacted Coal",
+                        "item_per_min": "5"
+                    }
+                ]
+            },
+            "Unpackage Ionized Fuel": {
+                "alternate": false,
+                "byproduct": false,
+                "ingredients": [
+                    {
+                        "item_name": "Packaged Ionized Fuel",
+                        "item_per_min": "40"
+                    }
+                ],
+                "produced_in": "Packager",
+                "products": [
+                    {
+                        "item_name": "Ionized Fuel",
+                        "item_per_min": "80"
+                    },
+                    {
+                        "item_name": "Empty Fluid Tank",
+                        "item_per_min": "40"
+                    }
+                ]
+            },
+            "Dark-Ion Fuel": {
+                "alternate": true,
+                "byproduct": false,
+                "ingredients": [
+                    {
+                        "item_name": "Packaged Rocket Fuel",
+                        "item_per_min": "240"
+                    },
+                    {
+                        "item_name": "Dark Matter Crystal",
+                        "item_per_min": "80"
+                    }
+                ],
+                "produced_in": "Converter",
+                "products": [
+                    {
+                        "item_name": "Ionized Fuel",
+                        "item_per_min": "200"
+                    },
+                    {
+                        "item_name": "Compacted Coal",
+                        "item_per_min": "40"
+                    }
+                ]
+            }
+        },
+        "primary": false,
+        "hex_color": "#fff1cb"
     },
     "Iron Ingot": {
         "recipes": {
@@ -3238,6 +3818,54 @@
     "Limestone": {
         "primary": true,
         "hex_color": "#bdb5ad"
+    },
+    "Liquid Biofuel": {
+        "recipes": {
+            "Liquid Biofuel": {
+                "alternate": false,
+                "byproduct": false,
+                "ingredients": [
+                    {
+                        "item_name": "Solid Biofuel",
+                        "item_per_min": "90"
+                    },
+                    {
+                        "item_name": "Water",
+                        "item_per_min": "45"
+                    }
+                ],
+                "produced_in": "Refinery",
+                "products": [
+                    {
+                        "item_name": "Liquid Biofuel",
+                        "item_per_min": "60"
+                    }
+                ]
+            },
+            "Unpackage Liquid Biofuel": {
+                "alternate": false,
+                "byproduct": false,
+                "ingredients": [
+                    {
+                        "item_name": "Packaged Liquid Biofuel",
+                        "item_per_min": "60"
+                    }
+                ],
+                "produced_in": "Packager",
+                "products": [
+                    {
+                        "item_name": "Liquid Biofuel",
+                        "item_per_min": "60"
+                    },
+                    {
+                        "item_name": "Empty Canister",
+                        "item_per_min": "60"
+                    }
+                ]
+            }
+        },
+        "primary": false,
+        "hex_color": "#080810"
     },
     "Magnetic Field Generator": {
         "recipes": {
@@ -3529,6 +4157,62 @@
         },
         "primary": false,
         "hex_color": "#201c43"
+    },
+    "Nitric Acid": {
+        "recipes": {
+            "Nitric Acid": {
+                "alternate": false,
+                "byproduct": false,
+                "ingredients": [
+                    {
+                        "item_name": "Nitrogen Gas",
+                        "item_per_min": "120"
+                    },
+                    {
+                        "item_name": "Water",
+                        "item_per_min": "30"
+                    },
+                    {
+                        "item_name": "Iron Plate",
+                        "item_per_min": "10"
+                    }
+                ],
+                "produced_in": "Blender",
+                "products": [
+                    {
+                        "item_name": "Nitric Acid",
+                        "item_per_min": "30"
+                    }
+                ]
+            },
+            "Unpackage Nitric Acid": {
+                "alternate": false,
+                "byproduct": false,
+                "ingredients": [
+                    {
+                        "item_name": "Packaged Nitric Acid",
+                        "item_per_min": "20"
+                    }
+                ],
+                "produced_in": "Packager",
+                "products": [
+                    {
+                        "item_name": "Nitric Acid",
+                        "item_per_min": "20"
+                    },
+                    {
+                        "item_name": "Empty Fluid Tank",
+                        "item_per_min": "20"
+                    }
+                ]
+            }
+        },
+        "primary": false,
+        "hex_color": "#eae7c6"
+    },
+    "Nitrogen Gas": {
+        "primary": true,
+        "hex_color": "#080810"
     },
     "Non-Fissile Uranium": {
         "recipes": {
@@ -4759,6 +5443,91 @@
         "primary": false,
         "hex_color": "#8c94ad"
     },
+    "Rocket Fuel": {
+        "recipes": {
+            "Rocket Fuel": {
+                "alternate": false,
+                "byproduct": false,
+                "ingredients": [
+                    {
+                        "item_name": "Turbofuel",
+                        "item_per_min": "60"
+                    },
+                    {
+                        "item_name": "Nitric Acid",
+                        "item_per_min": "10"
+                    }
+                ],
+                "produced_in": "Blender",
+                "products": [
+                    {
+                        "item_name": "Rocket Fuel",
+                        "item_per_min": "100"
+                    },
+                    {
+                        "item_name": "Compacted Coal",
+                        "item_per_min": "10"
+                    }
+                ]
+            },
+            "Unpackage Rocket Fuel": {
+                "alternate": false,
+                "byproduct": false,
+                "ingredients": [
+                    {
+                        "item_name": "Packaged Rocket Fuel",
+                        "item_per_min": "60"
+                    }
+                ],
+                "produced_in": "Packager",
+                "products": [
+                    {
+                        "item_name": "Rocket Fuel",
+                        "item_per_min": "120"
+                    },
+                    {
+                        "item_name": "Empty Fluid Tank",
+                        "item_per_min": "60"
+                    }
+                ]
+            },
+            "Nitro Rocket Fuel": {
+                "alternate": true,
+                "byproduct": false,
+                "ingredients": [
+                    {
+                        "item_name": "Fuel",
+                        "item_per_min": "100"
+                    },
+                    {
+                        "item_name": "Nitrogen Gas",
+                        "item_per_min": "75"
+                    },
+                    {
+                        "item_name": "Sulfur",
+                        "item_per_min": "100"
+                    },
+                    {
+                        "item_name": "Coal",
+                        "item_per_min": "50"
+                    }
+                ],
+                "produced_in": "Blender",
+                "products": [
+                    {
+                        "item_name": "Rocket Fuel",
+                        "item_per_min": "150"
+                    },
+                    {
+                        "item_name": "Compacted Coal",
+                        "item_per_min": "25"
+                    }
+                ]
+            }
+        },
+        "primary": false,
+        "hex_color": "#ff150c"
+    },
     "Rotor": {
         "recipes": {
             "Rotor": {
@@ -5488,6 +6257,83 @@
         "primary": true,
         "hex_color": "#cebd63"
     },
+    "Sulfuric Acid": {
+        "recipes": {
+            "Encased Uranium Cell": {
+                "alternate": false,
+                "byproduct": true,
+                "ingredients": [
+                    {
+                        "item_name": "Uranium",
+                        "item_per_min": "50"
+                    },
+                    {
+                        "item_name": "Concrete",
+                        "item_per_min": "15"
+                    },
+                    {
+                        "item_name": "Sulfuric Acid",
+                        "item_per_min": "40"
+                    }
+                ],
+                "produced_in": "Blender",
+                "products": [
+                    {
+                        "item_name": "Encased Uranium Cell",
+                        "item_per_min": "25"
+                    },
+                    {
+                        "item_name": "Sulfuric Acid",
+                        "item_per_min": "10"
+                    }
+                ]
+            },
+            "Sulfuric Acid": {
+                "alternate": false,
+                "byproduct": false,
+                "ingredients": [
+                    {
+                        "item_name": "Sulfur",
+                        "item_per_min": "50"
+                    },
+                    {
+                        "item_name": "Water",
+                        "item_per_min": "50"
+                    }
+                ],
+                "produced_in": "Refinery",
+                "products": [
+                    {
+                        "item_name": "Sulfuric Acid",
+                        "item_per_min": "50"
+                    }
+                ]
+            },
+            "Unpackage Sulfuric Acid": {
+                "alternate": false,
+                "byproduct": false,
+                "ingredients": [
+                    {
+                        "item_name": "Packaged Sulfuric Acid",
+                        "item_per_min": "60"
+                    }
+                ],
+                "produced_in": "Packager",
+                "products": [
+                    {
+                        "item_name": "Sulfuric Acid",
+                        "item_per_min": "60"
+                    },
+                    {
+                        "item_name": "Empty Canister",
+                        "item_per_min": "60"
+                    }
+                ]
+            }
+        },
+        "primary": false,
+        "hex_color": "#f7ff10"
+    },
     "Supercomputer": {
         "recipes": {
             "Supercomputer": {
@@ -5763,6 +6609,104 @@
         "primary": false,
         "hex_color": "#000000"
     },
+    "Turbofuel": {
+        "recipes": {
+            "Unpackage Turbofuel": {
+                "alternate": false,
+                "byproduct": false,
+                "ingredients": [
+                    {
+                        "item_name": "Packaged Turbofuel",
+                        "item_per_min": "20"
+                    }
+                ],
+                "produced_in": "Packager",
+                "products": [
+                    {
+                        "item_name": "Turbofuel",
+                        "item_per_min": "20"
+                    },
+                    {
+                        "item_name": "Empty Canister",
+                        "item_per_min": "20"
+                    }
+                ]
+            },
+            "Turbo Blend Fuel": {
+                "alternate": true,
+                "byproduct": false,
+                "ingredients": [
+                    {
+                        "item_name": "Fuel",
+                        "item_per_min": "15"
+                    },
+                    {
+                        "item_name": "Heavy Oil Residue",
+                        "item_per_min": "30"
+                    },
+                    {
+                        "item_name": "Sulfur",
+                        "item_per_min": "22.5"
+                    },
+                    {
+                        "item_name": "Petroleum Coke",
+                        "item_per_min": "22.5"
+                    }
+                ],
+                "produced_in": "Blender",
+                "products": [
+                    {
+                        "item_name": "Turbofuel",
+                        "item_per_min": "45"
+                    }
+                ]
+            },
+            "Turbo Heavy Fuel": {
+                "alternate": true,
+                "byproduct": false,
+                "ingredients": [
+                    {
+                        "item_name": "Heavy Oil Residue",
+                        "item_per_min": "37.5"
+                    },
+                    {
+                        "item_name": "Compacted Coal",
+                        "item_per_min": "30"
+                    }
+                ],
+                "produced_in": "Refinery",
+                "products": [
+                    {
+                        "item_name": "Turbofuel",
+                        "item_per_min": "30"
+                    }
+                ]
+            },
+            "Turbofuel": {
+                "alternate": true,
+                "byproduct": false,
+                "ingredients": [
+                    {
+                        "item_name": "Fuel",
+                        "item_per_min": "22.5"
+                    },
+                    {
+                        "item_name": "Compacted Coal",
+                        "item_per_min": "15"
+                    }
+                ],
+                "produced_in": "Refinery",
+                "products": [
+                    {
+                        "item_name": "Turbofuel",
+                        "item_per_min": "18.75"
+                    }
+                ]
+            }
+        },
+        "primary": false,
+        "hex_color": "#f70000"
+    },
     "Uranium": {
         "recipes": {
             "Uranium Ore (Bauxite)": {
@@ -5929,6 +6873,240 @@
         "primary": false,
         "hex_color": "#000000"
     },
+    "Water": {
+        "recipes": {
+            "Aluminum Scrap": {
+                "alternate": false,
+                "byproduct": true,
+                "ingredients": [
+                    {
+                        "item_name": "Alumina Solution",
+                        "item_per_min": "240"
+                    },
+                    {
+                        "item_name": "Coal",
+                        "item_per_min": "120"
+                    }
+                ],
+                "produced_in": "Refinery",
+                "products": [
+                    {
+                        "item_name": "Aluminum Scrap",
+                        "item_per_min": "360"
+                    },
+                    {
+                        "item_name": "Water",
+                        "item_per_min": "120"
+                    }
+                ]
+            },
+            "Battery": {
+                "alternate": false,
+                "byproduct": true,
+                "ingredients": [
+                    {
+                        "item_name": "Sulfuric Acid",
+                        "item_per_min": "50"
+                    },
+                    {
+                        "item_name": "Alumina Solution",
+                        "item_per_min": "40"
+                    },
+                    {
+                        "item_name": "Aluminum Casing",
+                        "item_per_min": "20"
+                    }
+                ],
+                "produced_in": "Blender",
+                "products": [
+                    {
+                        "item_name": "Battery",
+                        "item_per_min": "20"
+                    },
+                    {
+                        "item_name": "Water",
+                        "item_per_min": "30"
+                    }
+                ]
+            },
+            "Non-Fissile Uranium": {
+                "alternate": false,
+                "byproduct": true,
+                "ingredients": [
+                    {
+                        "item_name": "Uranium Waste",
+                        "item_per_min": "37.5"
+                    },
+                    {
+                        "item_name": "Silica",
+                        "item_per_min": "25"
+                    },
+                    {
+                        "item_name": "Nitric Acid",
+                        "item_per_min": "15"
+                    },
+                    {
+                        "item_name": "Sulfuric Acid",
+                        "item_per_min": "15"
+                    }
+                ],
+                "produced_in": "Blender",
+                "products": [
+                    {
+                        "item_name": "Non-Fissile Uranium",
+                        "item_per_min": "50"
+                    },
+                    {
+                        "item_name": "Water",
+                        "item_per_min": "15"
+                    }
+                ]
+            },
+            "Unpackage Water": {
+                "alternate": false,
+                "byproduct": false,
+                "ingredients": [
+                    {
+                        "item_name": "Packaged Water",
+                        "item_per_min": "120"
+                    }
+                ],
+                "produced_in": "Packager",
+                "products": [
+                    {
+                        "item_name": "Water",
+                        "item_per_min": "120"
+                    },
+                    {
+                        "item_name": "Empty Canister",
+                        "item_per_min": "120"
+                    }
+                ]
+            },
+            "Distilled SilicaAlternate As ": {
+                "alternate": true,
+                "byproduct": false,
+                "ingredients": [
+                    {
+                        "item_name": "Dissolved Silica",
+                        "item_per_min": "120"
+                    },
+                    {
+                        "item_name": "Limestone",
+                        "item_per_min": "50"
+                    },
+                    {
+                        "item_name": "Water",
+                        "item_per_min": "100"
+                    }
+                ],
+                "produced_in": "Blender",
+                "products": [
+                    {
+                        "item_name": "Silica",
+                        "item_per_min": "270"
+                    },
+                    {
+                        "item_name": "Water",
+                        "item_per_min": "80"
+                    }
+                ]
+            },
+            "Electrode Aluminum ScrapAlternate As ": {
+                "alternate": true,
+                "byproduct": false,
+                "ingredients": [
+                    {
+                        "item_name": "Alumina Solution",
+                        "item_per_min": "180"
+                    },
+                    {
+                        "item_name": "Petroleum Coke",
+                        "item_per_min": "60"
+                    }
+                ],
+                "produced_in": "Refinery",
+                "products": [
+                    {
+                        "item_name": "Aluminum Scrap",
+                        "item_per_min": "300"
+                    },
+                    {
+                        "item_name": "Water",
+                        "item_per_min": "105"
+                    }
+                ]
+            },
+            "Fertile UraniumAlternate As ": {
+                "alternate": true,
+                "byproduct": false,
+                "ingredients": [
+                    {
+                        "item_name": "Uranium",
+                        "item_per_min": "25"
+                    },
+                    {
+                        "item_name": "Uranium Waste",
+                        "item_per_min": "25"
+                    },
+                    {
+                        "item_name": "Nitric Acid",
+                        "item_per_min": "15"
+                    },
+                    {
+                        "item_name": "Sulfuric Acid",
+                        "item_per_min": "25"
+                    }
+                ],
+                "produced_in": "Blender",
+                "products": [
+                    {
+                        "item_name": "Non-Fissile Uranium",
+                        "item_per_min": "100"
+                    },
+                    {
+                        "item_name": "Water",
+                        "item_per_min": "40"
+                    }
+                ]
+            },
+            "Instant ScrapAlternate As ": {
+                "alternate": true,
+                "byproduct": false,
+                "ingredients": [
+                    {
+                        "item_name": "Bauxite",
+                        "item_per_min": "150"
+                    },
+                    {
+                        "item_name": "Coal",
+                        "item_per_min": "100"
+                    },
+                    {
+                        "item_name": "Sulfuric Acid",
+                        "item_per_min": "50"
+                    },
+                    {
+                        "item_name": "Water",
+                        "item_per_min": "60"
+                    }
+                ],
+                "produced_in": "Blender",
+                "products": [
+                    {
+                        "item_name": "Aluminum Scrap",
+                        "item_per_min": "300"
+                    },
+                    {
+                        "item_name": "Water",
+                        "item_per_min": "50"
+                    }
+                ]
+            }
+        },
+        "primary": false,
+        "hex_color": "#a7cee1"
+    },
     "Wire": {
         "recipes": {
             "Wire": {
@@ -6008,7 +7186,43 @@
         "hex_color": "#b5ad9c"
     },
     "Wood": {
-        "primary": true,
+        "recipes": {
+            "Biomass (Wood)": {
+                "alternate": false,
+                "byproduct": false,
+                "ingredients": [
+                    {
+                        "item_name": "Wood",
+                        "item_per_min": "60"
+                    }
+                ],
+                "produced_in": "Constructor",
+                "products": [
+                    {
+                        "item_name": "Biomass",
+                        "item_per_min": "300"
+                    }
+                ]
+            },
+            "Charcoal": {
+                "alternate": true,
+                "byproduct": false,
+                "ingredients": [
+                    {
+                        "item_name": "Wood",
+                        "item_per_min": "15"
+                    }
+                ],
+                "produced_in": "Constructor",
+                "products": [
+                    {
+                        "item_name": "Coal",
+                        "item_per_min": "150"
+                    }
+                ]
+            }
+        },
+        "primary": false,
         "hex_color": "#b5a584"
     }
 }
