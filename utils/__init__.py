@@ -1,5 +1,7 @@
 
 from .GetLogger import logger
+from .GetMainColor import get_main_color
+from .ReadRecipes import read_recipes
 
 
 primary_itens = (
@@ -16,9 +18,9 @@ primary_itens = (
     "SAM",
     "Leaves",
     "Wood",
-    "Bacon Agaric",
+    "Bacon_Agaric",
     "Paleberry",
-    "Beryl Nut",
+    "Beryl_Nut",
     "Mycelia"
 )
 
@@ -60,4 +62,6 @@ __all__ = [
     "logger",
     "primary_itens",
     "blacklist",
+    "get_main_color",
+    "read_recipes"
 ]
