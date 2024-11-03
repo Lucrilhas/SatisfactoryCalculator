@@ -111,7 +111,7 @@ if __name__ == "__main__":
         all_crafts = {}
         for indc, item_link in enumerate(items_links):
             item_name = item_link[6:]
-            if item_name in primary_itens:
+            if item_name in primary_items:
                 logger.warning(item_name)
                 title = scrape_title_img_item(main_page_link + item_link, main_page_link)
                 img_path = r"data/imgs/" + title + r".png"

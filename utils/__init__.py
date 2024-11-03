@@ -62,7 +62,7 @@ blacklist = (
 
 __all__ = [
     "logger",
-    "primary_itens",
+    "primary_items",
     "blacklist",
     "get_main_color",
     "read_recipes"
