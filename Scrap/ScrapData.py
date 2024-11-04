@@ -11,6 +11,8 @@ def extract_items(items_container):
         try:
             item_per_craft = item_data.contents[0].text.replace("×", "").strip()
             item_name = item_data.contents[2].text.strip()
+            if "/wiki/" + item_name.replace(' ', '_') in blacklist:
+                return None
             item_per_min = item_data.contents[3].text.replace("/", "").replace("min", "").strip()
             items.append({"item_name": item_name, "item_per_min": item_per_min})
         except (IndexError, AttributeError):
@@ -45,13 +47,16 @@ def scrape_wiki_item_crafing(url: str) -> dict:
         if asBy:
             recipe = recipe[:-13]
 
-        crafts[recipe] = {
-            "alternate": alt,
-            "byproduct": asBy,
-            "ingredients": extract_items(ings),
-            "produced_in": produced_in,
-            "products": extract_items(prods),
-        }
+        
+        ingredients = extract_items(ings)
+        if not ingredients is None:
+            crafts[recipe] = {
+                "alternate": alt,
+                "byproduct": asBy,
+                "ingredients": ingredients,
+                "produced_in": produced_in,
+                "products": extract_items(prods),
+            }
 
     return crafts
 
