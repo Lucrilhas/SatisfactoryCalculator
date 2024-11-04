@@ -42,10 +42,10 @@ def scrape_wiki_item_crafing(url: str) -> dict:
 
         alt = "Alternate" in recipe
         if alt:
-            recipe = recipe[:-9]
+            recipe = recipe.replace('Alternate', '')
         asBy = "As byproduct" in recipe
         if asBy:
-            recipe = recipe[:-13]
+            recipe = recipe.replace('Alternate', 'As byproduct')
 
         
         ingredients = extract_items(ings)
