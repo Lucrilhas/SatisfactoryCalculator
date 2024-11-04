@@ -42,30 +42,10 @@ def define_tiers():
 
             full_data[item_name]['recipes'][recipe_name]['max_tier'] = max(ingredients_tiers) + 1
             logger.warning(f"TIER {max(ingredients_tiers) + 1} --- {item_name} --- {recipe_name}")
+            print(full_data[item_name])
             indices_to_remove.append(indc)
         data = [item for i, item in enumerate(data) if i not in indices_to_remove]
         print(len(data))
         if len(data) == prev:
             break
         prev = len(data)
-            # for recipe_name in full_data.get(item_name).get('recipes'):
-            #     recipe = full_data.get(item_name).get('recipes').get(recipe_name)
-            #     all_primary = True
-            #     for ingredient in recipe.get('ingredients'):
-            #         if full_data.get(ingredient.get('item_name')).get('primary', False) == False:
-            #             all_primary = False
-            #             break
-            #     if all_primary:
-            #         logger.warning(f"TIER 1 --- {item_name} --- {recipe_name}")
-            #         items_names.pop(lenn - indc - 1)
-            #         full_data[item_name]['max_tier'] = 1
-            #         continue
-
-            # for recipe_name in full_data.get(item_name).get('recipes'):
-            #     recipe = full_data.get(item_name).get('recipes').get(recipe_name)
-            #     tiers = [ingredient.get('max_tier') for ingredient in recipe.get('ingredients')]
-            #     if None in tiers:
-            #         continue
-            #     full_data[item_name]['max_tier'] = max(tiers) + 1
-                
-            #     logger.warning(f"TIER {max(tiers) + 1} --- {item_name} --- {recipe_name}")
