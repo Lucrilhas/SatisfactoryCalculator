@@ -148,29 +148,6 @@
         "primary": false,
         "hex_color": "#adb5bd"
     },
-    "Alien DNA Capsule": {
-        "recipes": {
-            "Alien DNA Capsule": {
-                "alternate": false,
-                "byproduct": false,
-                "ingredients": [
-                    {
-                        "item_name": "Alien Protein",
-                        "item_per_min": "10"
-                    }
-                ],
-                "produced_in": "Constructor",
-                "products": [
-                    {
-                        "item_name": "Alien DNA Capsule",
-                        "item_per_min": "10"
-                    }
-                ]
-            }
-        },
-        "primary": false,
-        "hex_color": "#9c9ca5"
-    },
     "Alien Power Matrix": {
         "recipes": {
             "Alien Power Matrix": {
@@ -209,154 +186,6 @@
         },
         "primary": false,
         "hex_color": "#ffeefe"
-    },
-    "Alien Protein": {
-        "recipes": {
-            "Hatcher Protein": {
-                "alternate": false,
-                "byproduct": false,
-                "ingredients": [
-                    {
-                        "item_name": "Hatcher Remains",
-                        "item_per_min": "20"
-                    }
-                ],
-                "produced_in": "Constructor",
-                "products": [
-                    {
-                        "item_name": "Alien Protein",
-                        "item_per_min": "20"
-                    }
-                ]
-            },
-            "Hog Protein": {
-                "alternate": false,
-                "byproduct": false,
-                "ingredients": [
-                    {
-                        "item_name": "Hog Remains",
-                        "item_per_min": "20"
-                    }
-                ],
-                "produced_in": "Constructor",
-                "products": [
-                    {
-                        "item_name": "Alien Protein",
-                        "item_per_min": "20"
-                    }
-                ]
-            },
-            "Spitter Protein": {
-                "alternate": false,
-                "byproduct": false,
-                "ingredients": [
-                    {
-                        "item_name": "Spitter Remains",
-                        "item_per_min": "20"
-                    }
-                ],
-                "produced_in": "Constructor",
-                "products": [
-                    {
-                        "item_name": "Alien Protein",
-                        "item_per_min": "20"
-                    }
-                ]
-            },
-            "Stinger Protein": {
-                "alternate": false,
-                "byproduct": false,
-                "ingredients": [
-                    {
-                        "item_name": "Stinger Remains",
-                        "item_per_min": "20"
-                    }
-                ],
-                "produced_in": "Constructor",
-                "products": [
-                    {
-                        "item_name": "Alien Protein",
-                        "item_per_min": "20"
-                    }
-                ]
-            }
-        },
-        "primary": false,
-        "hex_color": "#c8cbcb"
-    },
-    "Alien Remains": {
-        "recipes": {
-            "Hatcher Protein": {
-                "alternate": false,
-                "byproduct": false,
-                "ingredients": [
-                    {
-                        "item_name": "Hatcher Remains",
-                        "item_per_min": "20"
-                    }
-                ],
-                "produced_in": "Constructor",
-                "products": [
-                    {
-                        "item_name": "Alien Protein",
-                        "item_per_min": "20"
-                    }
-                ]
-            },
-            "Hog Protein": {
-                "alternate": false,
-                "byproduct": false,
-                "ingredients": [
-                    {
-                        "item_name": "Hog Remains",
-                        "item_per_min": "20"
-                    }
-                ],
-                "produced_in": "Constructor",
-                "products": [
-                    {
-                        "item_name": "Alien Protein",
-                        "item_per_min": "20"
-                    }
-                ]
-            },
-            "Spitter Protein": {
-                "alternate": false,
-                "byproduct": false,
-                "ingredients": [
-                    {
-                        "item_name": "Spitter Remains",
-                        "item_per_min": "20"
-                    }
-                ],
-                "produced_in": "Constructor",
-                "products": [
-                    {
-                        "item_name": "Alien Protein",
-                        "item_per_min": "20"
-                    }
-                ]
-            },
-            "Stinger Protein": {
-                "alternate": false,
-                "byproduct": false,
-                "ingredients": [
-                    {
-                        "item_name": "Stinger Remains",
-                        "item_per_min": "20"
-                    }
-                ],
-                "produced_in": "Constructor",
-                "products": [
-                    {
-                        "item_name": "Alien Protein",
-                        "item_per_min": "20"
-                    }
-                ]
-            }
-        },
-        "primary": false,
-        "hex_color": "#9c849c"
     },
     "Alumina Solution": {
         "recipes": {
@@ -831,23 +660,6 @@
     },
     "Biomass": {
         "recipes": {
-            "Biomass (Alien Protein)": {
-                "alternate": false,
-                "byproduct": false,
-                "ingredients": [
-                    {
-                        "item_name": "Alien Protein",
-                        "item_per_min": "15"
-                    }
-                ],
-                "produced_in": "Constructor",
-                "products": [
-                    {
-                        "item_name": "Biomass",
-                        "item_per_min": "1,500"
-                    }
-                ]
-            },
             "Biomass (Leaves)": {
                 "alternate": false,
                 "byproduct": false,
@@ -3910,12 +3722,7 @@
                     }
                 ],
                 "produced_in": "Equipment Workshop",
-                "products": [
-                    {
-                        "item_name": "Portable Miner",
-                        "item_per_min": "1.5"
-                    }
-                ]
+                "products": null
             },
             "Automated Miner": {
                 "alternate": true,
@@ -3931,12 +3738,7 @@
                     }
                 ],
                 "produced_in": "Assembler",
-                "products": [
-                    {
-                        "item_name": "Portable Miner",
-                        "item_per_min": "1"
-                    }
-                ]
+                "products": null
             }
         },
         "primary": false,
@@ -4935,57 +4737,6 @@
     },
     "Power Shard": {
         "recipes": {
-            "Power Shard (1)": {
-                "alternate": false,
-                "byproduct": false,
-                "ingredients": [
-                    {
-                        "item_name": "Blue Power Slug",
-                        "item_per_min": "7.5"
-                    }
-                ],
-                "produced_in": "Constructor",
-                "products": [
-                    {
-                        "item_name": "Power Shard",
-                        "item_per_min": "7.5"
-                    }
-                ]
-            },
-            "Power Shard (2)": {
-                "alternate": false,
-                "byproduct": false,
-                "ingredients": [
-                    {
-                        "item_name": "Yellow Power Slug",
-                        "item_per_min": "5"
-                    }
-                ],
-                "produced_in": "Constructor",
-                "products": [
-                    {
-                        "item_name": "Power Shard",
-                        "item_per_min": "10"
-                    }
-                ]
-            },
-            "Power Shard (5)": {
-                "alternate": false,
-                "byproduct": false,
-                "ingredients": [
-                    {
-                        "item_name": "Purple Power Slug",
-                        "item_per_min": "2.5"
-                    }
-                ],
-                "produced_in": "Constructor",
-                "products": [
-                    {
-                        "item_name": "Power Shard",
-                        "item_per_min": "12.5"
-                    }
-                ]
-            },
             "Synthetic Power Shard": {
                 "alternate": false,
                 "byproduct": false,
@@ -5024,59 +4775,7 @@
         "hex_color": "#de8c42"
     },
     "Power Slug": {
-        "recipes": {
-            "Power Shard (1)": {
-                "alternate": false,
-                "byproduct": false,
-                "ingredients": [
-                    {
-                        "item_name": "Blue Power Slug",
-                        "item_per_min": "7.5"
-                    }
-                ],
-                "produced_in": "Constructor",
-                "products": [
-                    {
-                        "item_name": "Power Shard",
-                        "item_per_min": "7.5"
-                    }
-                ]
-            },
-            "Power Shard (2)": {
-                "alternate": false,
-                "byproduct": false,
-                "ingredients": [
-                    {
-                        "item_name": "Yellow Power Slug",
-                        "item_per_min": "5"
-                    }
-                ],
-                "produced_in": "Constructor",
-                "products": [
-                    {
-                        "item_name": "Power Shard",
-                        "item_per_min": "10"
-                    }
-                ]
-            },
-            "Power Shard (5)": {
-                "alternate": false,
-                "byproduct": false,
-                "ingredients": [
-                    {
-                        "item_name": "Purple Power Slug",
-                        "item_per_min": "2.5"
-                    }
-                ],
-                "produced_in": "Constructor",
-                "products": [
-                    {
-                        "item_name": "Power Shard",
-                        "item_per_min": "12.5"
-                    }
-                ]
-            }
-        },
+        "recipes": {},
         "primary": false,
         "hex_color": "#a8c9e7"
     },
