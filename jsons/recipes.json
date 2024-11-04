@@ -1141,9 +1141,9 @@
                     }
                 ]
             },
-            "Dark-Ion FuelAlternate As ": {
+            "Dark-Ion Fuel": {
                 "alternate": true,
-                "byproduct": false,
+                "byproduct": true,
                 "ingredients": [
                     {
                         "item_name": "Packaged Rocket Fuel",
@@ -1166,9 +1166,9 @@
                     }
                 ]
             },
-            "Nitro Rocket FuelAlternate As ": {
+            "Nitro Rocket Fuel": {
                 "alternate": true,
-                "byproduct": false,
+                "byproduct": true,
                 "ingredients": [
                     {
                         "item_name": "Fuel",
@@ -2072,9 +2072,9 @@
     },
     "Dissolved Silica": {
         "recipes": {
-            "Quartz PurificationAlternate As ": {
+            "Quartz Purification": {
                 "alternate": true,
-                "byproduct": false,
+                "byproduct": true,
                 "ingredients": [
                     {
                         "item_name": "Raw Quartz",
@@ -3232,9 +3232,9 @@
                     }
                 ]
             },
-            "Polymer ResinAlternate As ": {
+            "Polymer Resin": {
                 "alternate": true,
-                "byproduct": false,
+                "byproduct": true,
                 "ingredients": [
                     {
                         "item_name": "Crude Oil",
@@ -4689,9 +4689,9 @@
                     }
                 ]
             },
-            "Heavy Oil ResidueAlternate As ": {
+            "Heavy Oil Residue": {
                 "alternate": true,
-                "byproduct": false,
+                "byproduct": true,
                 "ingredients": [
                     {
                         "item_name": "Crude Oil",
