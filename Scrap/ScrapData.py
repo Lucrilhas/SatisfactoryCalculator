@@ -104,7 +104,7 @@ def get_links_data():
         "/wiki/Raw_Quartz",
         "/wiki/SAM",
         "/wiki/Sulfur",
-        "/wiki/Water"
+        "/wiki/Water",
         "/wiki/Wood",
     )
 
