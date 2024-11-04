@@ -2,7 +2,7 @@ import os
 import requests
 from dotenv import load_dotenv
 from bs4 import BeautifulSoup
-from utils import logger
+from utils import *
 import json
 
 
@@ -24,6 +24,7 @@ def scrape_wiki_all_items(url: str) -> list[str]:
 
 
 def save_all_links():
+    os.makedirs(r"jsons", exist_ok=True)
     load_dotenv()
     main_page_link = os.getenv("MAIN_PAGE")
     all_itens_url = main_page_link + os.getenv("ALL_ITENS_PAGE")
@@ -34,43 +35,7 @@ def save_all_links():
     if items_links is None or fluid_links is None:
         return None
     links = set(items_links + fluid_links)
-
-    blacklist = (
-        "/wiki/Beacon",
-        "/wiki/Blade_Runners",
-        "/wiki/Boom_Box",
-        "/wiki/Color_Cartridge",
-        "/wiki/Cup",
-        "/wiki/Factory_Cart™",
-        "/wiki/FICSIT_Coupon",
-        "/wiki/FICSMAS/Equipment",
-        "/wiki/Flower_Petals",
-        "/wiki/Fluids",
-        "/wiki/Fuel/zh",
-        "/wiki/Gas_Mask",
-        "/wiki/Golden_Factory_Cart™",
-        "/wiki/Hard_Drive",
-        "/wiki/Hazmat_Suit",
-        "/wiki/Heavy_Oil_Residue/zh",
-        "/wiki/Hoverpack",
-        "/wiki/HUB_Parts",
-        "/wiki/Jetpack",
-        "/wiki/Medicinal_Inhaler",
-        "/wiki/Mercer_Sphere",
-        "/wiki/Nobelisk_Detonator",
-        "/wiki/Object_Scanner",
-        "/wiki/Parachute",
-        "/wiki/Portable_Miner",
-        "/wiki/Rebar_Gun",
-        "/wiki/Rifle",
-        "/wiki/Somersloop",
-        "/wiki/Statues",
-        "/wiki/User:Ondar111/sandbox",
-        "/wiki/Vines",
-        "/wiki/Xeno-Basher",
-        "/wiki/Xeno-Zapper",
-        "/wiki/Zipline"
-    )
+    
     
     links = [link for link in links if link not in blacklist]
     links.sort()
