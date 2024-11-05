@@ -20,6 +20,8 @@ def preset_mock(recipes: dict):
     for (e1, e2), weight in g.items():
         graph.add_edge(e1, e2, weight=weight)
 
+    leaves = get_leaves(graph)
+    logger.critical(leaves)
     # nodes = list(set([item for sublist in g.keys() for item in sublist]))
     # logger.debug(nodes)
     colors_to_use = [recipes.get(node).get("hex_color") for node in graph.nodes()]
@@ -225,16 +227,16 @@ def preset_mock_plotly_two(recipes: dict):
                     )
     fig.show()
     
-if __name__ == "__main__":
-    recipes = read_recipes()
-    # while True:
-    #     item_objective = input("Escreva um item para produzir:\n")
-    #     if item_objective in recipes.keys():
-    #         break
+# if __name__ == "__main__":
+#     recipes = read_recipes()
+#     # while True:
+#     #     item_objective = input("Escreva um item para produzir:\n")
+#     #     if item_objective in recipes.keys():
+#     #         break
 
-    # item_objective_pmin = float(input("Escreva Quantos itens por minuto:\n"))
+#     # item_objective_pmin = float(input("Escreva Quantos itens por minuto:\n"))
 
-    # print(item_objective, item_objective_pmin)
-    # preset_mock(recipes)
-    # preset_mock_plotly(recipes)
-    preset_mock_plotly_two(recipes)
+#     # print(item_objective, item_objective_pmin)
+#     # preset_mock(recipes)
+#     # preset_mock_plotly(recipes)
+#     preset_mock_plotly_two(recipes)
