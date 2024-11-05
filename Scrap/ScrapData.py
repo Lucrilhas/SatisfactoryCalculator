@@ -87,27 +87,6 @@ def get_links_data():
     main_page_link = os.getenv("MAIN_PAGE")
     itens = read_json(r"jsons\itens_links.json")
 
-    primary_items = (
-        "/wiki/Bacon_Agaric",
-        "/wiki/Bauxite",
-        "/wiki/Beryl_Nut",
-        "/wiki/Caterium_Ore",
-        "/wiki/Coal",
-        "/wiki/Copper_Ore",
-        "/wiki/Crude_Oil",
-        "/wiki/Excited_Photonic_Matter",
-        "/wiki/Iron_Ore",
-        "/wiki/Leaves",
-        "/wiki/Limestone",
-        "/wiki/Mycelia",
-        "/wiki/Nitrogen_Gas",
-        "/wiki/Paleberry",
-        "/wiki/Raw_Quartz",
-        "/wiki/SAM",
-        "/wiki/Sulfur",
-        "/wiki/Water",
-        "/wiki/Wood",
-    )
 
     all_crafts = {}
     for key in itens:
