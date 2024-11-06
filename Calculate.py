@@ -9,7 +9,7 @@ def get_first_non_primary(leaves, primarys=primary_clean_items):
     return False
 
 
-def verify_stop(leaves, primarys=primary_clean_items):
+def verify_stop(leaves, primarys=primary_clean_items, max_iteration=51):
     logger.debug("Folhas: \t\t" + str(leaves))
     logger.debug("Primarios: \t" + str([True if l in primarys else False for l in leaves ]))
     r = any(l not in primarys for l in leaves)
@@ -20,8 +20,8 @@ def verify_stop(leaves, primarys=primary_clean_items):
         
     return r
 
-
-def calculate(target_item="Iron Rod"):
+cool_itens = ["Wire", "Rotor", "Reinforced Iron Plate", "Cable", "Motor", "Copper Sheet"]
+def calculate_all_options(target_item=cool_itens[5], draw=False, max_iteration= 51):
     ppp = 0
     all_recipes = read_json("jsons/recipes.json")
     if target_item not in all_recipes.keys():
@@ -55,13 +55,15 @@ def calculate(target_item="Iron Rod"):
                     graph.add_edge(prod['item_name'], rc)
                 
 
-        if ppp == 51:
+        if ppp == max_iteration:
             logger.error("PARADA POR ITERAÇÕES!!")
             break
         ppp +=1
 
-    colors, label_colors = get_colors(graph, all_recipes, do_label=True)
-    desenha_grafo(graph, colors)
+    if draw:
+        colors, label_colors = get_colors(graph, all_recipes, do_label=True)
+        desenha_grafo(graph, colors)
+    return graph
 
 
     
