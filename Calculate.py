@@ -1,6 +1,6 @@
 import networkx as nx
 from utils import *
-import matplotlib.pyplot as plt
+
 
 def get_first_non_primary(leaves, primarys=primary_clean_items):
     for l in leaves:
@@ -30,10 +30,6 @@ def calculate_all_options(target_item=cool_itens[5], draw=False, max_iteration= 
 
     graph = nx.DiGraph()
     graph.add_node(target_item)
-    # print(graph)
-    # print(get_leaves(graph))
-
-    #already_processed = set()
 
     while verify_stop(get_leaves(graph)):
         folha = get_first_non_primary(get_leaves(graph))
@@ -65,28 +61,3 @@ def calculate_all_options(target_item=cool_itens[5], draw=False, max_iteration= 
         desenha_grafo(graph, colors)
     return graph
 
-
-    
-
-
-def desenha_grafo(graph, colors):
-    fig, ax = plt.subplots(figsize=(12, 8))
-    pos = nx.nx_agraph.graphviz_layout(graph, prog="dot")
-    nx.draw(
-        graph,
-        pos,
-        ax=ax,
-        with_labels=True,
-        bbox=dict(facecolor="red", alpha=.5),
-        node_size=1000,
-        font_color="#000000", # label_colors,
-        font_weight="bold",
-        font_size=12,
-        node_color=colors,
-        node_shape='s',
-        arrowsize=20,
-        width=0.5,
-    )
-    fig.set_facecolor("lightblue")
-    plt.subplots_adjust(left=0.0, bottom=0.0, right=1.0, top=1.0, wspace=0.2, hspace=0.2)
-    plt.show()
