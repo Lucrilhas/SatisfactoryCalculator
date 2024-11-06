@@ -305,47 +305,7 @@
         "hex_color": "#aaaaad"
     },
     "Aluminum Ingot": {
-        "recipes": {
-            "Aluminum Ingot": {
-                "alternate": false,
-                "byproduct": false,
-                "ingredients": [
-                    {
-                        "item_name": "Aluminum Scrap",
-                        "item_per_min": "90"
-                    },
-                    {
-                        "item_name": "Silica",
-                        "item_per_min": "75"
-                    }
-                ],
-                "produced_in": "Foundry",
-                "products": [
-                    {
-                        "item_name": "Aluminum Ingot",
-                        "item_per_min": "60"
-                    }
-                ]
-            },
-            "Pure Aluminum Ingot": {
-                "alternate": true,
-                "byproduct": false,
-                "ingredients": [
-                    {
-                        "item_name": "Aluminum Scrap",
-                        "item_per_min": "60"
-                    }
-                ],
-                "produced_in": "Smelter",
-                "products": [
-                    {
-                        "item_name": "Aluminum Ingot",
-                        "item_per_min": "30"
-                    }
-                ]
-            }
-        },
-        "primary": false,
+        "primary": true,
         "hex_color": "#adadad"
     },
     "Aluminum Scrap": {
@@ -854,7 +814,51 @@
         "hex_color": "#b5ad94"
     },
     "Caterium Ore": {
-        "primary": true,
+        "recipes": {
+            "Caterium Ore (Copper)": {
+                "alternate": false,
+                "byproduct": false,
+                "ingredients": [
+                    {
+                        "item_name": "Reanimated SAM",
+                        "item_per_min": "10"
+                    },
+                    {
+                        "item_name": "Copper Ore",
+                        "item_per_min": "150"
+                    }
+                ],
+                "produced_in": "Converter",
+                "products": [
+                    {
+                        "item_name": "Caterium Ore",
+                        "item_per_min": "120"
+                    }
+                ]
+            },
+            "Caterium Ore (Quartz)": {
+                "alternate": false,
+                "byproduct": false,
+                "ingredients": [
+                    {
+                        "item_name": "Reanimated SAM",
+                        "item_per_min": "10"
+                    },
+                    {
+                        "item_name": "Raw Quartz",
+                        "item_per_min": "120"
+                    }
+                ],
+                "produced_in": "Converter",
+                "products": [
+                    {
+                        "item_name": "Caterium Ore",
+                        "item_per_min": "120"
+                    }
+                ]
+            }
+        },
+        "primary": false,
         "hex_color": "#9c9cad"
     },
     "Chainsaw": {
@@ -1199,89 +1203,7 @@
         "hex_color": "#d6ad73"
     },
     "Concrete": {
-        "recipes": {
-            "Concrete": {
-                "alternate": false,
-                "byproduct": false,
-                "ingredients": [
-                    {
-                        "item_name": "Limestone",
-                        "item_per_min": "45"
-                    }
-                ],
-                "produced_in": "Constructor",
-                "products": [
-                    {
-                        "item_name": "Concrete",
-                        "item_per_min": "15"
-                    }
-                ]
-            },
-            "Fine Concrete": {
-                "alternate": true,
-                "byproduct": false,
-                "ingredients": [
-                    {
-                        "item_name": "Silica",
-                        "item_per_min": "15"
-                    },
-                    {
-                        "item_name": "Limestone",
-                        "item_per_min": "60"
-                    }
-                ],
-                "produced_in": "Assembler",
-                "products": [
-                    {
-                        "item_name": "Concrete",
-                        "item_per_min": "50"
-                    }
-                ]
-            },
-            "Rubber Concrete": {
-                "alternate": true,
-                "byproduct": false,
-                "ingredients": [
-                    {
-                        "item_name": "Limestone",
-                        "item_per_min": "100"
-                    },
-                    {
-                        "item_name": "Rubber",
-                        "item_per_min": "20"
-                    }
-                ],
-                "produced_in": "Assembler",
-                "products": [
-                    {
-                        "item_name": "Concrete",
-                        "item_per_min": "90"
-                    }
-                ]
-            },
-            "Wet Concrete": {
-                "alternate": true,
-                "byproduct": false,
-                "ingredients": [
-                    {
-                        "item_name": "Limestone",
-                        "item_per_min": "120"
-                    },
-                    {
-                        "item_name": "Water",
-                        "item_per_min": "100"
-                    }
-                ],
-                "produced_in": "Refinery",
-                "products": [
-                    {
-                        "item_name": "Concrete",
-                        "item_per_min": "80"
-                    }
-                ]
-            }
-        },
-        "primary": false,
+        "primary": true,
         "hex_color": "#a5948c"
     },
     "Cooling System": {
@@ -4200,72 +4122,7 @@
         "hex_color": "#000000"
     },
     "Plastic": {
-        "recipes": {
-            "Plastic": {
-                "alternate": false,
-                "byproduct": false,
-                "ingredients": [
-                    {
-                        "item_name": "Crude Oil",
-                        "item_per_min": "30"
-                    }
-                ],
-                "produced_in": "Refinery",
-                "products": [
-                    {
-                        "item_name": "Plastic",
-                        "item_per_min": "20"
-                    },
-                    {
-                        "item_name": "Heavy Oil Residue",
-                        "item_per_min": "10"
-                    }
-                ]
-            },
-            "Residual Plastic": {
-                "alternate": false,
-                "byproduct": false,
-                "ingredients": [
-                    {
-                        "item_name": "Polymer Resin",
-                        "item_per_min": "60"
-                    },
-                    {
-                        "item_name": "Water",
-                        "item_per_min": "20"
-                    }
-                ],
-                "produced_in": "Refinery",
-                "products": [
-                    {
-                        "item_name": "Plastic",
-                        "item_per_min": "20"
-                    }
-                ]
-            },
-            "Recycled Plastic": {
-                "alternate": true,
-                "byproduct": false,
-                "ingredients": [
-                    {
-                        "item_name": "Rubber",
-                        "item_per_min": "30"
-                    },
-                    {
-                        "item_name": "Fuel",
-                        "item_per_min": "30"
-                    }
-                ],
-                "produced_in": "Refinery",
-                "products": [
-                    {
-                        "item_name": "Plastic",
-                        "item_per_min": "60"
-                    }
-                ]
-            }
-        },
-        "primary": false,
+        "primary": true,
         "hex_color": "#1884de"
     },
     "Plutonium Fuel Rod": {
@@ -5009,72 +4866,7 @@
         "hex_color": "#000000"
     },
     "Rubber": {
-        "recipes": {
-            "Residual Rubber": {
-                "alternate": false,
-                "byproduct": false,
-                "ingredients": [
-                    {
-                        "item_name": "Polymer Resin",
-                        "item_per_min": "40"
-                    },
-                    {
-                        "item_name": "Water",
-                        "item_per_min": "40"
-                    }
-                ],
-                "produced_in": "Refinery",
-                "products": [
-                    {
-                        "item_name": "Rubber",
-                        "item_per_min": "20"
-                    }
-                ]
-            },
-            "Rubber": {
-                "alternate": false,
-                "byproduct": false,
-                "ingredients": [
-                    {
-                        "item_name": "Crude Oil",
-                        "item_per_min": "30"
-                    }
-                ],
-                "produced_in": "Refinery",
-                "products": [
-                    {
-                        "item_name": "Rubber",
-                        "item_per_min": "20"
-                    },
-                    {
-                        "item_name": "Heavy Oil Residue",
-                        "item_per_min": "20"
-                    }
-                ]
-            },
-            "Recycled Rubber": {
-                "alternate": true,
-                "byproduct": false,
-                "ingredients": [
-                    {
-                        "item_name": "Plastic",
-                        "item_per_min": "30"
-                    },
-                    {
-                        "item_name": "Fuel",
-                        "item_per_min": "30"
-                    }
-                ],
-                "produced_in": "Refinery",
-                "products": [
-                    {
-                        "item_name": "Rubber",
-                        "item_per_min": "60"
-                    }
-                ]
-            }
-        },
-        "primary": false,
+        "primary": true,
         "hex_color": "#181818"
     },
     "SAM": {
@@ -5170,101 +4962,7 @@
         "hex_color": "#184aad"
     },
     "Silica": {
-        "recipes": {
-            "Alumina Solution": {
-                "alternate": false,
-                "byproduct": true,
-                "ingredients": [
-                    {
-                        "item_name": "Bauxite",
-                        "item_per_min": "120"
-                    },
-                    {
-                        "item_name": "Water",
-                        "item_per_min": "180"
-                    }
-                ],
-                "produced_in": "Refinery",
-                "products": [
-                    {
-                        "item_name": "Alumina Solution",
-                        "item_per_min": "120"
-                    },
-                    {
-                        "item_name": "Silica",
-                        "item_per_min": "50"
-                    }
-                ]
-            },
-            "Silica": {
-                "alternate": false,
-                "byproduct": false,
-                "ingredients": [
-                    {
-                        "item_name": "Raw Quartz",
-                        "item_per_min": "22.5"
-                    }
-                ],
-                "produced_in": "Constructor",
-                "products": [
-                    {
-                        "item_name": "Silica",
-                        "item_per_min": "37.5"
-                    }
-                ]
-            },
-            "Cheap Silica": {
-                "alternate": true,
-                "byproduct": false,
-                "ingredients": [
-                    {
-                        "item_name": "Raw Quartz",
-                        "item_per_min": "22.5"
-                    },
-                    {
-                        "item_name": "Limestone",
-                        "item_per_min": "37.5"
-                    }
-                ],
-                "produced_in": "Assembler",
-                "products": [
-                    {
-                        "item_name": "Silica",
-                        "item_per_min": "52.5"
-                    }
-                ]
-            },
-            "Distilled Silica": {
-                "alternate": true,
-                "byproduct": false,
-                "ingredients": [
-                    {
-                        "item_name": "Dissolved Silica",
-                        "item_per_min": "120"
-                    },
-                    {
-                        "item_name": "Limestone",
-                        "item_per_min": "50"
-                    },
-                    {
-                        "item_name": "Water",
-                        "item_per_min": "100"
-                    }
-                ],
-                "produced_in": "Blender",
-                "products": [
-                    {
-                        "item_name": "Silica",
-                        "item_per_min": "270"
-                    },
-                    {
-                        "item_name": "Water",
-                        "item_per_min": "80"
-                    }
-                ]
-            }
-        },
-        "primary": false,
+        "primary": true,
         "hex_color": "#d6d6de"
     },
     "Singularity Cell": {
