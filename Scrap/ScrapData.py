@@ -11,7 +11,7 @@ def extract_items(items_container):
         try:
             item_per_craft = item_data.contents[0].text.replace("×", "").strip()
             item_name = item_data.contents[2].text.strip()
-            if "/wiki/" + item_name.replace(' ', '_') in blacklist:
+            if "/wiki/" + item_name.replace(' ', '_') in blacklist_items:
                 return None
             item_per_min = item_data.contents[3].text.replace("/", "").replace("min", "").strip()
             items.append({"item_name": item_name, "item_per_min": item_per_min})

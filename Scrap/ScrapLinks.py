@@ -37,7 +37,7 @@ def save_all_links():
     links = set(items_links + fluid_links)
     
     
-    links = [link for link in links if link not in blacklist]
+    links = [link for link in links if link not in blacklist_items]
     links.sort()
 
     links = {l.replace('_', ' ').replace('/wiki/', ''): {'link': l} for l in links}
