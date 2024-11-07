@@ -6,6 +6,8 @@ from .Lists import blacklist_items, primary_items, blacklist_recipes, primary_cl
 from .GetLeaves import get_leaves
 from .GetColors import get_colors
 from .DesenhaGrafo import desenha_grafo
+from .Combinator import generate_combinations
+from .DiGraphExistOnList import digraph_exist_on_list, recipes_used
 
 
 __all__ = [
@@ -18,5 +20,8 @@ __all__ = [
     "primary_items",
     "primary_clean_items",
     "get_colors",
-    "desenha_grafo"
+    "desenha_grafo",
+    "generate_combinations",
+    "digraph_exist_on_list",
+    "recipes_used"
 ]
