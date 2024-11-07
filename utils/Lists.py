@@ -30,6 +30,9 @@ primary_clean_items = (
     "Sulfur",
     "Water",
     "Wood",
+
+    # "B0", "B1", "C1", "C2", "D1", "G1", "G2", "F1", "F2",
+    # 'D', 'E', 'F', 'G', 'I'
 )
 
 primary_items = tuple("/wiki/" + i.replace(" ", "_") for i in primary_clean_items)
