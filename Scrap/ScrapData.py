@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 from bs4 import BeautifulSoup
 from utils import *
 import json
+import pandas as pd
 
 def extract_items(items_container):
     items = []
@@ -81,25 +82,26 @@ def scrape_image(name:str, item_link:str, main_page_link:str) -> str:
 
 
 def get_links_data():
-    os.makedirs(r"imgs", exist_ok=True)
-    
     load_dotenv()
+    os.makedirs(r"imgs", exist_ok=True)
+
     main_page_link = os.getenv("MAIN_PAGE")
-    itens = read_json(r"jsons\itens_links.json")
+    df = pd.read_csv(r"data/items.csv")
+    print(df)
 
 
-    all_crafts = {}
-    for key in itens:
-        link = itens.get(key).get('link')
-        image_filepath = scrape_image(key, link, main_page_link)
-        color = get_main_color(image_filepath)
+    # all_crafts = {}
+    # for key in itens:
+    #     link = itens.get(key).get('link')
+    #     image_filepath = scrape_image(key, link, main_page_link)
+    #     color = get_main_color(image_filepath)
         
-        if link in primary_items:
-            logger.warning(key)
-            all_crafts[key] = {'primary':True, 'hex_color': color}
-        else:
-            logger.debug(key)
-            all_crafts[key] = {'recipes': scrape_wiki_item_crafing(main_page_link + link), 'primary':False, 'hex_color': color}
+    #     if link in primary_items:
+    #         logger.warning(key)
+    #         all_crafts[key] = {'primary':True, 'hex_color': color}
+    #     else:
+    #         logger.debug(key)
+    #         all_crafts[key] = {'recipes': scrape_wiki_item_crafing(main_page_link + link), 'primary':False, 'hex_color': color}
             
-    with open(r'jsons/recipes.json', 'w') as f:
-        json.dump(all_crafts, f, indent=4)
+    # with open(r'jsons/recipes.json', 'w') as f:
+    #     json.dump(all_crafts, f, indent=4)

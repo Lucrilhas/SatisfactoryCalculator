@@ -1,4 +1,4 @@
-primary_items = set(
+primary_items = {
     "Iron Ingot",
     "Copper Ingot",
     "Caterium Ingot",
@@ -34,11 +34,11 @@ primary_items = set(
 
     # "B0", "B1", "C1", "C2", "D1", "G1", "G2", "F1", "F2",
     # 'D', 'E', 'F', 'G', 'I'
-)
+}
 primary_items_wiki = set("/wiki/" + i.replace(" ", "_") for i in primary_items)
 
 
-blacklist_items = set(
+blacklist_items = {
     "Beacon",
     "Blade Runners",
     "Boom Box",
@@ -83,10 +83,10 @@ blacklist_items = set(
     "Blue Power Slug",
     "Yellow Power Slug",
     "Purple Power Slug",
-)
+}
 blacklist_items_wiki = set("/wiki/" + i.replace(" ", "_") for i in blacklist_items)
 
-blacklist_recipes = set(
+blacklist_recipes = {
     "Basic Iron Ingot",
     "Iron Alloy Ingot",
     "Leached Iron ingot",
@@ -120,4 +120,4 @@ blacklist_recipes = set(
     "Unpackage Nitric Acid",
     "Unpackage Nitrogen Gas",
     "Unpackage Rocket Fuel"
-)
+}
