@@ -1,21 +1,24 @@
 import networkx as nx
 import matplotlib.pyplot as plt
 
-def desenha_grafo(graph, colors):
+
+def desenha_grafo(graph: nx.DiGraph, colors: list):
     fig, ax = plt.subplots(figsize=(12, 8))
+
+    poses = ["fdp","dot","neato","twopi","sfdp"]
     pos = nx.nx_agraph.graphviz_layout(graph, prog="dot")
     nx.draw(
         graph,
         pos,
         ax=ax,
         with_labels=True,
-        bbox=dict(facecolor="red", alpha=.5),
+        bbox=dict(facecolor="red", alpha=0.5),
         node_size=1000,
-        font_color="#000000", # label_colors,
+        font_color="#000000",  # label_colors,
         font_weight="bold",
         font_size=12,
         node_color=colors,
-        node_shape='s',
+        node_shape="s",
         arrowsize=20,
         width=0.5,
     )

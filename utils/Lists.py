@@ -9,6 +9,7 @@ primary_clean_items = (
     "Plastic",
     "Aluminum Ingot",
     # "Petroleum Coke",
+    "Steel Ingot",
     "Empty Canister"
     
     "Caterium Ore",
@@ -102,6 +103,7 @@ blacklist_recipes = (
     "Quartz Purification",
     "Fused Quartz Crystal",
     "Pure Quartz Crystal",
+    "Turbo Diamonds",
 
     "Empty Canister",
     "Unpackage Alumina Solution",
@@ -114,7 +116,6 @@ blacklist_recipes = (
     "Unpackage Water",
     "Coated Iron Canister",
     "Steel Canister",
-    "Empty Fluid Tank",
     "Unpackage Ionized Fuel",
     "Unpackage Nitric Acid",
     "Unpackage Nitrogen Gas",

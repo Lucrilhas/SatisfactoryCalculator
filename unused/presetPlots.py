@@ -240,3 +240,26 @@ def preset_mock_plotly_two(recipes: dict):
 #     # preset_mock(recipes)
 #     # preset_mock_plotly(recipes)
 #     preset_mock_plotly_two(recipes)
+
+
+    # pos_methods = [
+    #     "fdp",      # Gostei muito n
+    #     "dot",      # Mais ou Menos
+    #     "neato",    # Mais ou Menos
+    #     "twopi",    # Mais ou Menos
+    #     "sfdp",     # Meio Ok
+
+    #     "circo",    # Circulo Merda
+    #     "patchwork",    # Quadrado meio paia
+    #     "osage",    # Quadrado tbm meio paia
+    #     # N Funciona:
+    #     "gc",
+    #     "nop",
+    #     "acyclic",
+    #     "tred",
+    #     "gvpr",
+    #     "sccmap",
+    #     "gvcolor",
+    #     "unflatten",
+    #     "ccomps",
+    # ]

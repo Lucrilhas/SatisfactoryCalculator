@@ -22,7 +22,7 @@ def any_leaf_non_primary(leaves, primarys, do_print=True):
         
     return r
 
-def calculate_all_options(target_item, all_recipes, primarys=primary_clean_items, max_iteration=51):
+def calculate_all_options(target_item, all_recipes, primarys=primary_clean_items, max_iteration=101):
     ppp = 0
     if target_item not in all_recipes.keys():
         logger.error("Item não reconhecido: " + str(target_item))
