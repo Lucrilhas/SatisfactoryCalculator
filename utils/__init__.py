@@ -7,7 +7,6 @@ fluids_page_link = main_page_link + getenv("ALL_FLUIDS_PAGE")
 
 from .GetLogger import logger
 from .GetMainColor import get_main_color
-from .ReadJson import read_json
 from .Constansts import (
     primary_items,
     primary_items_wiki,
@@ -28,7 +27,6 @@ __all__ = [
     "fluids_page_link",
     "logger",
     "get_main_color",
-    "read_json",
     "primary_items",
     "primary_items_wiki",
     "blacklist_items",
