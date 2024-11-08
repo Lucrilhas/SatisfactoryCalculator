@@ -1,14 +1,21 @@
 # from Calculate import calculate_all_options, calculate_options
-from Scrap.ScrapData import get_links_data
-from Scrap.ScrapLinks import save_all_links
+from Scrap.ScrapData import get_recipes_data
+from Scrap.ScrapImages import get_images_and_colors
+from Scrap.ScrapLinks import get_items_links
 
 from utils import *
+import pandas as pd
 # from utils.CalculatePos import calculate_pos
 # import networkx as nx
 
 if __name__ == "__main__":
-    # save_all_links()
-    get_links_data()
+    # get_items_links()
+    # get_images_and_colors()
+    # get_recipes_data()
+
+    # items = pd.read_csv("data/items.csv")
+    recipes = pd.read_csv("data/recipes.csv")
+    print(recipes)
 
     # recipes = read_json("jsons/recipes.json")
     # preset_mock_plotly_two(recipes)

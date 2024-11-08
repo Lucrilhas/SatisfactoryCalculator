@@ -1,10 +1,9 @@
 import os
 import requests
-from dotenv import load_dotenv
 from bs4 import BeautifulSoup
 from utils import *
-import json
 import pandas as pd
+
 
 def extract_items(items_container):
     items = []
@@ -12,7 +11,7 @@ def extract_items(items_container):
         try:
             item_per_craft = item_data.contents[0].text.replace("×", "").strip()
             item_name = item_data.contents[2].text.strip()
-            if "/wiki/" + item_name.replace(' ', '_') in blacklist_items:
+            if "/wiki/" + item_name.replace(" ", "_") in blacklist_items:
                 return None
             item_per_min = item_data.contents[3].text.replace("/", "").replace("min", "").strip()
             items.append({"item_name": item_name, "item_per_min": item_per_min})
@@ -43,13 +42,12 @@ def scrape_wiki_item_crafing(url: str) -> dict:
 
         alt = "Alternate" in recipe
         if alt:
-            recipe = recipe.replace('Alternate', '')
-        asBy = 'As byproduct' in recipe
+            recipe = recipe.replace("Alternate", "")
+        asBy = "As byproduct" in recipe
         if asBy:
-            recipe = recipe.replace('As byproduct', '')
+            recipe = recipe.replace("As byproduct", "")
         recipe = recipe.strip()
 
-        
         ingredients = extract_items(ings)
         if not ingredients is None:
             crafts[recipe] = {
@@ -62,46 +60,54 @@ def scrape_wiki_item_crafing(url: str) -> dict:
 
     return crafts
 
-def scrape_image(name:str, item_link:str, main_page_link:str) -> str:
-    # logger.info(url)
-    response = requests.get(main_page_link + item_link)
-    response.raise_for_status()
-    # logger.debug(response)
-    soup = BeautifulSoup(response.content, "html.parser")
 
-    img_url = soup.find('img', class_='pi-image-thumbnail').get('src')
-    img_url = main_page_link + img_url
-
-    filepath = os.path.join(r"imgs/" + name + r".png")
-    response = requests.get(img_url, stream=True)
-    response.raise_for_status()
-    with open(filepath, 'wb') as f:
-        for chunk in response.iter_content(chunk_size=8192):
-            f.write(chunk)
-    return filepath
-
-
-def get_links_data():
-    load_dotenv()
+def get_recipes_data():
     os.makedirs(r"imgs", exist_ok=True)
 
-    main_page_link = os.getenv("MAIN_PAGE")
     df = pd.read_csv(r"data/items.csv")
-    print(df)
+    # print(df)
 
-
-    # all_crafts = {}
-    # for key in itens:
-    #     link = itens.get(key).get('link')
-    #     image_filepath = scrape_image(key, link, main_page_link)
-    #     color = get_main_color(image_filepath)
-        
-    #     if link in primary_items:
-    #         logger.warning(key)
-    #         all_crafts[key] = {'primary':True, 'hex_color': color}
-    #     else:
-    #         logger.debug(key)
-    #         all_crafts[key] = {'recipes': scrape_wiki_item_crafing(main_page_link + link), 'primary':False, 'hex_color': color}
-            
-    # with open(r'jsons/recipes.json', 'w') as f:
-    #     json.dump(all_crafts, f, indent=4)
+    recipes = []
+    for row in df.itertuples():
+        if row.is_primary:
+            logger.info(row.item)
+        else:
+            crafts = scrape_wiki_item_crafing(row.link)
+            for recipe in crafts:
+                if recipe in blacklist_recipes:
+                    logger.warning(f"{row.item}  ---  {recipe}")
+                    continue
+                
+                logger.info(f"{row.item}  ---  {recipe}")
+                aux = {
+                    "recipe": recipe,
+                    "ingredient 0 name": None,
+                    "ingredient 0 p_min": None,
+                    "ingredient 1 name": None,
+                    "ingredient 1 p_min": None,
+                    "ingredient 2 name": None,
+                    "ingredient 2 p_min": None,
+                    "ingredient 3 name": None,
+                    "ingredient 3 p_min": None,
+                    "product name": None,
+                    "product p_min": None,
+                    "by_product": None,
+                    "by_product p_min": None,
+                    "is_alternate": crafts[recipe]["alternate"],
+                    "produced_in": crafts[recipe]["produced_in"],
+                }
+                for i, ing in enumerate(crafts[recipe]['ingredients']):
+                    aux[f"ingredient {i} name"] = ing.get("item_name")
+                    aux[f"ingredient {i} p_min"] = ing.get("item_per_min")
+                    
+                for i, prod in enumerate(crafts[recipe]['products']):
+                    if i == 0:
+                        aux[f"product {i} name"] = prod.get("item_name")
+                        aux[f"product {i} p_min"] = prod.get("item_per_min")
+                    elif i == 1:
+                        aux[f"by_product {i} name"] = prod.get("item_name")
+                        aux[f"by_product {i} p_min"] = prod.get("item_per_min")
+                recipes.append(aux)
+                    
+    recipes = pd.DataFrame(recipes)
+    recipes.to_csv("data/recipes.csv", index=False)

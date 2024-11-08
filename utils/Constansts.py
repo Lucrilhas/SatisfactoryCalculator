@@ -11,7 +11,8 @@ primary_items = {
     # "Petroleum Coke",
     "Steel Ingot",
     "Empty Canister",
-    
+
+    "Uranium",
     "Caterium Ore",
     "Copper Ore",
     "Iron Ore",
@@ -119,5 +120,9 @@ blacklist_recipes = {
     "Unpackage Ionized Fuel",
     "Unpackage Nitric Acid",
     "Unpackage Nitrogen Gas",
-    "Unpackage Rocket Fuel"
+    "Unpackage Rocket Fuel",
+
+    "Power Shard (1)",
+    "Power Shard (2)",
+    "Power Shard (5)"
 }

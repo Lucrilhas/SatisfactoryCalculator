@@ -24,20 +24,16 @@ def scrape_wiki_all_items(url: str) -> list[str]:
         return None
 
 
-def save_all_links():
+def get_items_links():
     os.makedirs(r"data", exist_ok=True)
-    load_dotenv()
-    main_page_link = os.getenv("MAIN_PAGE")
-    all_itens_url = main_page_link + os.getenv("ALL_ITENS_PAGE")
-    all_fuilds_url = main_page_link + os.getenv("ALL_FLUIDS_PAGE")
-    logger.info([all_itens_url, all_fuilds_url])
-    all_items = scrape_wiki_all_items(all_itens_url) + scrape_wiki_all_items(all_fuilds_url)
-    
-    items = [item for item in all_items if item not in blacklist_items]
-    df = pd.DataFrame(items, columns=['items'])
-    df['link'] = main_page_link + "/wiki/" + df['items'].str.replace(" ", "_")
-    df = df.sort_values('items')
-    df['color'] = None
-    df.to_csv(r"data/items.csv", index=False)
-    print(df)
+    logger.info([items_page_link, fluids_page_link])
+    all_items = scrape_wiki_all_items(items_page_link) + scrape_wiki_all_items(fluids_page_link)
 
+    items = [item for item in all_items if item not in blacklist_items]
+    df = pd.DataFrame(items, columns=['item'])
+    df['link'] = main_page_link + "/wiki/" + df['item'].str.replace(" ", "_")
+    df['color'] = None
+    df['is_primary'] = df['item'].isin(primary_items)
+    df = df.sort_values('item')
+    df.to_csv(r"data/items.csv", index=False)
+    # print(df)

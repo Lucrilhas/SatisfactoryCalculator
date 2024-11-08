@@ -1,9 +1,6 @@
-from dotenv import load_dotenv
-from os import getenv
-
-main_page_link = getenv("MAIN_PAGE")
-items_page_link = main_page_link + getenv("ALL_ITENS_PAGE")
-fluids_page_link = main_page_link + getenv("ALL_FLUIDS_PAGE")
+main_page_link = "https://satisfactory.wiki.gg"
+items_page_link = main_page_link + "/wiki/Category:Items"
+fluids_page_link = main_page_link + "/wiki/Category:Fluids"
 
 from .GetLogger import logger
 from .GetMainColor import get_main_color
