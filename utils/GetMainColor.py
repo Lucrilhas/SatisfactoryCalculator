@@ -39,6 +39,6 @@ def get_main_color(image_path):
     except FileNotFoundError:
         logger.error(f"Error: Image file not found at {image_path}")
         return None
-    except Exception as e: # Handle other potential errors (e.g., invalid image format)
+    except Exception as e:
         logger.error(f"An error occurred: {e}")
         return None
