@@ -3,6 +3,11 @@ from utils import *
 import copy
 
 
+def get_leaves(graph):
+    leaves = [node for node in graph.nodes() if not list(nx.descendants(graph, node))]
+    return leaves
+
+
 def get_first_non_primary(leaves, primarys):
     for l in leaves:
         if l not in primarys:
@@ -22,7 +27,7 @@ def any_leaf_non_primary(leaves, primarys, do_print=True):
         
     return r
 
-def calculate_all_options(target_item, all_recipes, primarys=primary_clean_items, max_iteration=101):
+def calculate_all_options(target_item, all_recipes, primarys=primary_items, max_iteration=101):
     ppp = 0
     if target_item not in all_recipes.keys():
         logger.error("Item não reconhecido: " + str(target_item))
@@ -75,7 +80,7 @@ def add_neighboors_based_on_other(main_graph, info_graph, node):
         #     main_graph.add_edge(suc, suc_of_suc)
 
 
-def calculate_options(target_item, info_graph, recipes, primarys=primary_clean_items, max_iteration=40):
+def calculate_options(target_item, info_graph, recipes, primarys=primary_items, max_iteration=40):
     ppp=0
     opcoes = [nx.DiGraph()]
     opcoes[0].add_node(target_item)

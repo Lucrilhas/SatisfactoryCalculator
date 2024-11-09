@@ -11,7 +11,6 @@ from .Constansts import (
     blacklist_items_wiki,
     blacklist_recipes,
 )
-from .GetLeaves import get_leaves
 from .GetColors import get_colors
 from .DesenhaGrafo import desenha_grafo
 from .Combinator import generate_combinations
@@ -29,7 +28,6 @@ __all__ = [
     "blacklist_items",
     "blacklist_items_wiki",
     "blacklist_recipes",
-    "get_leaves",
     "get_colors",
     "desenha_grafo",
     "generate_combinations",

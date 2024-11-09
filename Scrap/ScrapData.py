@@ -81,15 +81,15 @@ def get_recipes_data():
                 logger.info(f"{row.item}  ---  {recipe}")
                 aux = {
                     "recipe": recipe,
-                    "ingredient 0 name": None,
+                    "ingredient 0": None,
                     "ingredient 0 p_min": None,
-                    "ingredient 1 name": None,
+                    "ingredient 1": None,
                     "ingredient 1 p_min": None,
-                    "ingredient 2 name": None,
+                    "ingredient 2": None,
                     "ingredient 2 p_min": None,
-                    "ingredient 3 name": None,
+                    "ingredient 3": None,
                     "ingredient 3 p_min": None,
-                    "product name": None,
+                    "product": None,
                     "product p_min": None,
                     "by_product": None,
                     "by_product p_min": None,
@@ -97,16 +97,16 @@ def get_recipes_data():
                     "produced_in": crafts[recipe]["produced_in"],
                 }
                 for i, ing in enumerate(crafts[recipe]['ingredients']):
-                    aux[f"ingredient {i} name"] = ing.get("item_name")
+                    aux[f"ingredient {i}"] = ing.get("item_name")
                     aux[f"ingredient {i} p_min"] = ing.get("item_per_min")
                     
                 for i, prod in enumerate(crafts[recipe]['products']):
                     if i == 0:
-                        aux[f"product {i} name"] = prod.get("item_name")
-                        aux[f"product {i} p_min"] = prod.get("item_per_min")
+                        aux[f"product"] = prod.get("item_name")
+                        aux[f"product p_min"] = prod.get("item_per_min")
                     elif i == 1:
-                        aux[f"by_product {i} name"] = prod.get("item_name")
-                        aux[f"by_product {i} p_min"] = prod.get("item_per_min")
+                        aux[f"by_product"] = prod.get("item_name")
+                        aux[f"by_product p_min"] = prod.get("item_per_min")
                 recipes.append(aux)
                     
     recipes = pd.DataFrame(recipes)
