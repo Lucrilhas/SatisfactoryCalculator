@@ -1,5 +1,5 @@
 # from Calculate import calculate_all_options, calculate_options
-from GraphProcessing import calculate_all_graph
+from GraphProcessing import calculate_all_graph, calculate_each_path
 from Scrap.ScrapData import get_recipes_data
 from Scrap.ScrapImages import get_images_and_colors
 from Scrap.ScrapLinks import get_items_links
@@ -30,11 +30,14 @@ if __name__ == "__main__":
     # options_graph = calculate_all_options(target_item, recipes)
     complete_graph = calculate_all_graph(target_item, items, recipes)
 
-    # colors = get_colors(options_graph, recipes)
+    colors = get_colors(complete_graph, recipes)
     # calculate_pos(options_graph, target_item, )
-    desenha_grafo(complete_graph, None)
-    # print("\n====================================\n")
-
+    print(colors)
+    desenha_grafo(complete_graph, colors)
+    print("\n====================================\n")
+    paths = calculate_each_path(target_item, complete_graph)
+    for p in paths:
+        desenha_grafo(p, None)
     # options = calculate_options(target_item, options_graph, recipes)
     # logger.info(len(options))
     # for o in options:

@@ -1,12 +1,16 @@
 import networkx as nx
 import matplotlib.pyplot as plt
+from utils import logger
 
 
 def desenha_grafo(graph: nx.DiGraph, colors: list):
     fig, ax = plt.subplots(figsize=(12, 8))
 
     poses = ["fdp","dot","neato","twopi","sfdp"]
+    # logger.info(graph.nodes())
+    # logger.info(graph.edges())
     pos = nx.nx_agraph.graphviz_layout(graph, prog="dot")
+    # pos = nx.spring_layout(graph)
     nx.draw(
         graph,
         pos,
