@@ -26,7 +26,6 @@ def first_leave_non_primary(leaves):
 def calculate_all_graph(target_item: str, items:pd.DataFrame, recipes:pd.DataFrame, max_iterations: int = 101):
     if target_item not in items['item'].values:
         logger.error("Item não reconhecido: " + str(target_item))
-        recipes
         exit()
 
     graph = nx.DiGraph()
@@ -42,25 +41,35 @@ def calculate_all_graph(target_item: str, items:pd.DataFrame, recipes:pd.DataFra
             graph.add_edge(row['product'], "Recipe: " + row['recipe'])
 
             if row['by_product']:
-                logger.warning(row['by_product'])
-                graph.add_node(row['by_product'])
-                graph.add_edge(row['by_product'], "Recipe: " + row['recipe'])
+                graph.add_node("By product: " + row['by_product'])
+                graph.add_edge("By product: " + row['by_product'], "Recipe: " + row['recipe'])
 
             for i in range(4):
                 id = f'ingredient {i}'
                 if row[id]:
-                    logger.warning(row[id])
                     graph.add_node(row[id])
                     graph.add_edge("Recipe: " + row['recipe'], row[id])
                     
 
-        logger.info(iteration)
-        logger.info(get_leaves(graph))
-        logger.info(all_leaves_are_primary(graph))
-        print()
+        # logger.info(iteration)
+        # logger.info(get_leaves(graph))
+        # logger.info(all_leaves_are_primary(graph))
+        # print()
         
         if all_leaves_are_primary(graph):
             return graph
 
     logger.error("PARADA POR ITERAÇÕES!!")
-    
+
+
+def calculate_each_path(target_item: str, paths_graph:nx.DiGraph, items:pd.DataFrame, recipes:pd.DataFrame, max_iterations: int = 101):
+    opcoes = [nx.DiGraph()]
+    opcoes[0].add_node(target_item)
+    finais = []
+
+    for _ in range(max_iterations):
+        g = opcoes.pop(0)
+        leaves = get_leaves(g)
+
+
+    logger.error("PARADA POR ITERAÇÕES!!")
