@@ -27,19 +27,12 @@ if __name__ == "__main__":
     # target_item = "Ionized Fuel"
     # target_item = "Thermal Propulsion Rocket"
     
-    # options_graph = calculate_all_options(target_item, recipes)
     complete_graph = calculate_all_graph(target_item, items, recipes)
 
-    colors = get_colors(complete_graph, recipes)
-    # calculate_pos(options_graph, target_item, )
-    print(colors)
+    colors = get_colors(complete_graph, items)
     desenha_grafo(complete_graph, colors)
     print("\n====================================\n")
     paths = calculate_each_path(target_item, complete_graph)
     for p in paths:
-        desenha_grafo(p, None)
-    # options = calculate_options(target_item, options_graph, recipes)
-    # logger.info(len(options))
-    # for o in options:
-    #     colors = get_colors(o, recipes)
-    #     desenha_grafo(o, colors)
+        colors = get_colors(p, items)
+        desenha_grafo(p, colors)
